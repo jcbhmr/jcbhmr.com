@@ -1,7 +1,7 @@
 <div align="center">
 
-You're probably looking for [my GitHub profile] 😉
+**You're probably looking for [jcbhmr.me]**
 
 </div>
 
-[my github profile]: https://github.com/jcbhmr
+[jcbhmr.me]: https://jcbhmr.me/
