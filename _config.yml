@@ -1,0 +1,6 @@
+# Use GitHub Markdown instead of Kramdown.
+markdown: GFM
+# Don't show the auto-generated `<h1>` at the top of each page.
+name: ""
+# Don't do the "| My Site" suffix to every page title.
+title: false

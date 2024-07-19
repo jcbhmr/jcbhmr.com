@@ -1,7 +1,3 @@
-<div align="center">
-
-**You're probably looking for [jcbhmr.me]**
-
-</div>
-
-[jcbhmr.me]: https://jcbhmr.me/
+<p align="center">
+  <b>You're probably looking for <a href="https://jcbhmr.me/">jcbhmr.me</a></b>
+</p>
