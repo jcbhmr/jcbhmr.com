@@ -3,12 +3,9 @@ title: jcbhmr
 description: A far too meticulous web developer 💻
 remote_theme: jekyll/minima
 github_username: jcbhmr
-youtube_username: jcbhmr
 linkedin_username: jcbhmr
 minima:
   skin: auto
-header_pages:
-  - index.md
 collections:
   posts:
     permalink: /blog/:title
