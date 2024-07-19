@@ -1,7 +1,6 @@
 markdown: GFM
 title: jcbhmr
-description: Jacob Hummer's website
-author: Jacob Hummer
+description: A far too meticulous web developer 💻
 theme: minima
 github_username: jcbhmr
 linkedin_username: jcbhmr
@@ -10,3 +9,6 @@ minima:
   date_format: "%Y-%m-%d"
 header_pages:
   - index.md
+collections:
+  posts:
+    permalink: /blog/:title
