@@ -2,10 +2,19 @@ markdown: GFM
 title: jcbhmr
 description: A far too meticulous web developer 💻
 remote_theme: jekyll/minima
-github_username: jcbhmr
+
 minima:
   skin: auto
-header_pages: []
+  social_links:
+    - { platform: devto,          user_url: "https://dev.to/jcbhmr" }
+    - { platform: github,         user_url: "https://github.com/jcbhmr" }
+    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/jcbhmr" }
+    - { platform: twitter,        user_url: "https://twitter.com/jcbhmr" }
+    - { platform: youtube,        user_url: "https://www.youtube.com/jcbhmr" }
+
+header_pages:
+  - index.md
+
 collections:
   posts:
     permalink: /blog/:title
