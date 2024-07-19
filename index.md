@@ -1,6 +1,6 @@
 ---
 permalink: /
 layout: home
-title: jcbhmr
+title: Home
 list_title: Blog
 ---

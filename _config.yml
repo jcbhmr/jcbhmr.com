@@ -1,3 +1,4 @@
+markdown: GFM
 title: jcbhmr
 description: Jacob Hummer's website
 author: Jacob Hummer
@@ -5,7 +6,6 @@ theme: minima
 github_username: jcbhmr
 linkedin_username: jcbhmr
 rss: rss
-show_excerpts: true
 minima:
   date_format: "%Y-%m-%d"
 header_pages:
