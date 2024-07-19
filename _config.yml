@@ -1,6 +1,12 @@
-# Use GitHub Markdown instead of Kramdown.
-markdown: GFM
-# Don't show the auto-generated `<h1>` at the top of each page.
-name: ""
-# Don't do the "| My Site" suffix to every page title.
-title: false
+title: jcbhmr
+description: Jacob Hummer's website
+author: Jacob Hummer
+theme: minima
+github_username: jcbhmr
+linkedin_username: jcbhmr
+rss: rss
+show_excerpts: true
+minima:
+  date_format: "%Y-%m-%d"
+header_pages:
+  - index.md
