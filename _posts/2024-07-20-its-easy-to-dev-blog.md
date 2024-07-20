@@ -79,3 +79,7 @@ Now you have your new fancy dev blog post on _your own website_! 🥳 And it onl
 <sub>It should look something like this</sub>
 
 ![](https://i.imgur.com/YSVkQtt.png)
+
+## Or just use something else
+
+You can always use WordPress, Google Docs Publishing, a GitHub Gist, DEV.to, or any other platform that you feel comfortable with. Once you get **something** on a (digital) paper somewhere so that you can show someone or post a link somewhere, that's **OUTSTANDING** already! 🎉
