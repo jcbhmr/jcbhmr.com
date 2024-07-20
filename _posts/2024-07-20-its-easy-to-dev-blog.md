@@ -37,6 +37,8 @@ To do that, create a `_config.yml` file in your GitHub repository that you creat
 remote_theme: jekyll/minima
 ```
 
+[📚⚙️ More Minima settings!](https://github.com/jekyll/minima/blob/master/_config.yml)
+
 Why again do you need to do this? Because Minima theme has a builtin no-config default blog feed on the homepage that makes it perfect for near-zero-config setups.
 
 We also need to _use_ this Minima theme for our homepage. You'll need to also create an `index.md` file:
