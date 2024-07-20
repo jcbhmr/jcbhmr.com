@@ -43,7 +43,7 @@ import (
 go run ./gen.go
 ```
 
-Further reading 🤓
+Further reading 📚
 
 - https://play-with-go.dev/tools-as-dependencies_go119_en/
 - https://www.tiredsg.dev/blog/golang-tools-as-dependencies/
