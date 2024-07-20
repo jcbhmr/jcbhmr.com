@@ -16,9 +16,6 @@ minima:
     - { platform: twitter,        user_url: "https://twitter.com/jcbhmr" }
     - { platform: youtube,        user_url: "https://www.youtube.com/@jcbhmr" }
 
-header_pages:
-  - index.md
-
 collections:
   posts:
     permalink: /blog/:title
