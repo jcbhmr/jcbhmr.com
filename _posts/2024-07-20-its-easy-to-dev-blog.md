@@ -29,6 +29,8 @@ After you hit Save you should be able to visit `<username>.github.io` as a websi
 
 The default Primer GitHub Pages theme is nice... but it lacks a homepage index of your most recent blog posts. 😢 IMO the best path forward is to switch to another default theme: the builtin default [Jekyll Minima theme](https://github.com/jekyll/minima).
 
+![](https://i.imgur.com/8FJxh9B.png)
+
 To do that, create a `_config.yml` file in your GitHub repository that you created in step 1 and add the following line:
 
 <div><code>_config.yml</code></div>
@@ -59,6 +61,8 @@ Any **content** you [put here](#) will appear _on the homepage_
 
 Make a `_posts/` folder and then create a `_posts/2020-01-01-hello-world.md` document. _(Change the date to reflect your date)_ Add some content to it! Just make sure it has some YAML frontmatter specifying it's `layout: post` and `title: Your text here`.
 
+<div><code>_posts/2020-01-01-hello-world.md</code></div>
+
 ```md
 ---
 layout: post
@@ -71,3 +75,7 @@ title: Hello world!
 ```
 
 Now you have your new fancy dev blog post on _your own website_! 🥳 And it only took a few files!
+
+<sub>It should look something like this</sub>
+
+![](https://i.imgur.com/YSVkQtt.png)
