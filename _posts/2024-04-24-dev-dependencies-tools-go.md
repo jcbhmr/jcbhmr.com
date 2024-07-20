@@ -3,9 +3,29 @@ layout: post
 title: Put dev dependencies in tools.go
 ---
 
-**TL;DR:** Use a `tools.go` file with `//go:build tools` to list `import _ "github.com/octocat/somedevtool"` to stop `go mod tidy` from removing them.
+**Problem:** You have a `./gen.go` script that uses `github.com/arkady-emelyanov/go-shellparse` to do some stuff. When you run `go mod tidy` it removes `github.com/arkady-emelyanov/go-shellparse` from your `go.mod` because `./gen.go` has a `//go:build ignore` in it... which means `go mod tidy` doesn't include it in its checks. 😔
 
-<div><code>task.go</code></div>
+<div><code>gen.go</code></div>
+
+```go
+//go:build ignore
+
+package main
+
+import (
+	"github.com/arkady-emelyanov/go-shellparse"
+    // etc.
+)
+
+func main() {
+    shellparse.ParseVarsFile("file.txt")
+    exec.Command("go", "run", "github.com/melbahja/got/cmd/got").Run()
+}
+```
+
+**Solution:** Use `tools.go` with `//go:build tools` which `go mod tidy` _does_ scan and add any dependencies to list all the dependencies that `./gen.go` needs.
+
+<div><code>tools.go</code></div>
 
 ```go
 //go:build tools
@@ -15,39 +35,12 @@ package tools
 import (
 	_ "github.com/melbahja/got/cmd/got"
 	_ "github.com/arkady-emelyanov/go-shellparse"
+    // etc.
 )
 ```
 
-<sup>💡 `go mod tidy` doesn't care if the package is cmd or lib</sup>
-
-Then you can use whatever you list in `tools.go` in `//go:generate` and `task.go`!
-
-```go
-package mylib
-
-//go:generate -command got go run github.com/melbahja/got/cmd/got
-
-import (
-  "fmt"
-  _ "embed"
-)
-//go:generate got https://example.org/image.png -o image.png
-//go:embed image.png
-var imagePNG []byte
-```
-
-<div><code>task.go</code></div>
-
-```go
-//go:build ignore
-
-package main
-
-import "github.com/arkady-emelyanov/go-shellparse"
-
-func main() {
-  // ...
-}
+```sh
+go run ./gen.go
 ```
 
 Further reading 🤓
