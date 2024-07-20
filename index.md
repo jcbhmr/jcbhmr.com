@@ -14,3 +14,5 @@ list_title: Blog
     I'm <b style="color: deepskyblue;">Jacob Hummer</b>.<br>
     You found my website!
 </table>
+
+Check out the [cool stuff I'm making on GitHub](https://github.com/jcbhmr).
