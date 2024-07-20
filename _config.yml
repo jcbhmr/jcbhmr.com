@@ -1,6 +1,10 @@
 remote_theme: jekyll/minima
 markdown: GFM
 
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
 title: jcbhmr
 description: A far too meticulous web developer 💻
 author:
