@@ -48,10 +48,10 @@ CC="cosmocc" \
 CXX="cosmoc++" \
 cmake \
   -DCMAKE_SYSTEM_NAME="Generic" \
-  -DCMAKE_SYSTEM_PROCESSOR="" \
+  -UCMAKE_SYSTEM_PROCESSOR \
   -DCMAKE_USER_MAKE_RULES_OVERRIDE="$PWD/cosmocc-override.cmake" \
   -DCMAKE_AR="$(command -v cosmoar)" \
-  -DCMAKE_RANLIB="" \
+  -UCMAKE_RANLIB \
   -B build
 ```
 
@@ -75,11 +75,11 @@ cmake \
 
 **Why not `CMAKE_SYSTEM_NAME="Linux"`?** So that `if(LINUX)` and other Linux-specific stuff in `CMakeLists.txt` doesn't activate for <code>unknown-<u><i>unknown</i></u>-cosmo</code>.
 
-**Why not `CMAKE_SYSTEM_PROCESSOR="unknown"`?** The empty string is what means <code><u><i>unknown</i></u>-unknown-cosmo</code> to CMake. CMake internals use `if(CMAKE_SYSTEM_PROCESSOR)`, not `if(CMAKE_SYSTEM_PROCESSOR STREQUAL unknown)`.
+**Why not `CMAKE_SYSTEM_PROCESSOR="unknown"`?** _`unset`_ is what means <code><u><i>unknown</i></u>-unknown-cosmo</code> to CMake. CMake internals use `if(CMAKE_SYSTEM_PROCESSOR)`, not `if(CMAKE_SYSTEM_PROCESSOR STREQUAL unknown)`.
 
 **Why does `CMAKE_AR` need to be an absolute path?** Unfixed issue. https://gitlab.kitware.com/cmake/cmake/-/issues/18087
 
-**Why does `CMAKE_RANLIB` need to be set if it's just set to an empty string?** To stop CMake using `ranlib`. `cosmocc` doesn't have a `cosmoranlib` (yet).
+**Why does `CMAKE_RANLIB` need to be unset?** CMake gates using `ranlib` behind `if(CMAKE_RANLIB)` so it must be _`unset`_ not just an empty string. `cosmocc` doesn't bundle a `cosmoar`.
 
 **Why can't we do `AR="cosmoar"` like `CC` and `CXX`?** Unfixed issue. https://gitlab.kitware.com/cmake/cmake/-/issues/18712
 
