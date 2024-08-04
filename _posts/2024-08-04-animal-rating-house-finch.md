@@ -55,7 +55,7 @@ Not particularly. The House Finch is more of a commoner, the working class of th
 
 #### Final rating
 
-Very good cat entertainment... if the cat is inhibited from initiating combat. Tends to get confused with other common birdfeeder birds. When you see a red-plume male house finch it's pretty unique. They may not be the noblest of birds, but they sure know how to make a birdfeeder feel like it's a popular hangout. Generally a good suburban mini-animal.
+Very good cat entertainment if the cat is prevented from initiating combat. Tends to get confused with other common birdfeeder birds. When you see a red-plume male house finch it's pretty unique. They may not be the noblest of birds, but they sure know how to make a birdfeeder feel like it's a popular hangout. Generally a good suburban mini-animal.
 
 **7/10**
 
