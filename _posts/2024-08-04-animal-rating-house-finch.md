@@ -32,7 +32,7 @@ And being misidentified as a sparrow.
 
 #### Number of legs
 
-Two, but they can't walk.
+Two, but they don't walk.
 
 <img width=400 src="https://github.com/user-attachments/assets/abb7b0b9-66c9-4a8c-b8d8-17aee9eb1fad">
 
