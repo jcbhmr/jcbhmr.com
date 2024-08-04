@@ -15,10 +15,8 @@ The House Finch is the avian equivalent of that friend who can turn any mundane 
 Female house finches are grayish brown. That's their special power. Kinda a second-rate ability if you ask me. But they do naturally blend in with the background of tree branches and bark or that spot in your backyard that was originally a flower bed but is now an unkempt carpet of brown and gray leaves. There's just one problem: the house finch is too stupid to know that it's hidden and breaks the illusion with loud chirping noises and jerky head movements.
 
 <table><td>
-
-![vijayalakshmi-nidugondi-DkSO-eBWirI-unsplash (1)](https://github.com/user-attachments/assets/26449c13-2530-4cac-aad0-dee32a51858d)<br>
+<img src="https://github.com/user-attachments/assets/26449c13-2530-4cac-aad0-dee32a51858d"><br>
 <sup>Photo by <a href="https://unsplash.com/@songsofnature?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Vijayalakshmi Nidugondi</a> on <a href="https://unsplash.com/photos/a-small-bird-sitting-on-a-branch-of-a-tree-DkSO-eBWirI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></sup>
-
 <tr><td>This is totally a GIF. Wait for it to twitch its head.
 </table>
 
