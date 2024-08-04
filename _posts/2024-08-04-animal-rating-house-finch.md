@@ -3,7 +3,7 @@ layout: post
 title: "Animal Rating: The House Finch"
 ---
 
-The House Finch is the avian equivalent of that friend who can turn any mundane situation into a party. Think about it; you never see just one house finch. There's always a whole [chirping of finches](https://allcollectivenouns.com/animal/collective-noun-for-finches). House finches are true extroverts.
+The House Finch is the avian equivalent of that friend who can turn any mundane situation into a party. Think about it. You never see just one house finch. There's always a whole [chirping of finches](https://allcollectivenouns.com/animal/collective-noun-for-finches). House finches are true extroverts.
 
 <table><td>
 <a title="Rhododendrites, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:House_finch_(33688)2.jpg"><img width="512" alt="House finch (33688)2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/House_finch_%2833688%292.jpg/512px-House_finch_%2833688%292.jpg?20201124230402"></a>
