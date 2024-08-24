@@ -87,7 +87,7 @@ Let's try this: **"Anything that would disable achievements is cheating. No exte
  It makes it easy to cheese mobs, yes, but it is a setting that you can change in survival mode. 🤷‍♀️
 
 **Why is using an X-Ray texture pack _not_ considered cheating?** \
-It's not even worth it to X-Ray in the first place. X-Ray is more cumbersome than spelunking.
+You're getting more ores for a cumbersome hassle. The effort you have to put into using X-Ray is similar to the effort of regular spelunking.
 
 **Why are Chunk Base and Ore Finder allowed?** \
 Chunk Base is necessary to find slime chunks. Once you open it up to determining slime chunks you might as well open it up to allow any external tool.
