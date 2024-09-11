@@ -51,7 +51,7 @@ cmake \
   -UCMAKE_SYSTEM_PROCESSOR \
   -DCMAKE_USER_MAKE_RULES_OVERRIDE="$PWD/cosmocc-override.cmake" \
   -DCMAKE_AR="$(command -v cosmoar)" \
-  -UCMAKE_RANLIB \
+  -DCMAKE_RANLIB="$(command -v cosmoranlib)" \
   -B build
 ```
 
@@ -77,9 +77,7 @@ cmake \
 
 **Why not `CMAKE_SYSTEM_PROCESSOR="unknown"`?** _`unset`_ is what means <code><u><i>unknown</i></u>-unknown-cosmo</code> to CMake. CMake internals use `if(CMAKE_SYSTEM_PROCESSOR)`, not `if(CMAKE_SYSTEM_PROCESSOR STREQUAL unknown)`.
 
-**Why does `CMAKE_AR` need to be an absolute path?** Unfixed issue. https://gitlab.kitware.com/cmake/cmake/-/issues/18087
-
-**Why does `CMAKE_RANLIB` need to be unset?** CMake gates using `ranlib` behind `if(CMAKE_RANLIB)` so it must be _`unset`_ not just an empty string. `cosmocc` doesn't bundle a `cosmoar`.
+**Why do `CMAKE_AR` and `CMAKE_RANLIB` need to be an absolute path?** Unfixed issue. https://gitlab.kitware.com/cmake/cmake/-/issues/18087
 
 **Why can't we do `AR="cosmoar"` like `CC` and `CXX`?** Unfixed issue. https://gitlab.kitware.com/cmake/cmake/-/issues/18712
 
