@@ -69,27 +69,7 @@ inline void * emalloc(size_t n) {
 // Do the same wrapper thing for all the other functions.
 ```
 
-Now you can do this instead!
-
-<table>
-<thead><tr><th>Before<th>After
-<tbody><tr><td>
-
-```c
-double* data = (double*)malloc(20 * sizeof(double));
-if (data == NULL) {
-  fputs("out of memory", stderr);
-  abort();
-}
-```
-
-<td>
-
-```c
-double* data = (double*)emalloc(20 * sizeof(double));
-```
-
-</table>
+I just thought it was cool that this was a thing that is _built into an operating system's C standard library_. That's batteries included for sure.
 
 ## What do other languages do on out-of-memory errors?
 
