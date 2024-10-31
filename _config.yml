@@ -19,7 +19,8 @@ minima:
     - { platform: linkedin,       user_url: "https://www.linkedin.com/in/jcbhmr" }
     - { platform: twitter,        user_url: "https://twitter.com/jcbhmr" }
     - { platform: youtube,        user_url: "https://www.youtube.com/@jcbhmr" }
-  google_analytics: https://jcbhmr.goatcounter.com/count
+
+google_analytics: https://jcbhmr.goatcounter.com/count
 
 collections:
   posts:
