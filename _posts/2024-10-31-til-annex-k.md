@@ -23,6 +23,8 @@ int main() {
 }
 ```
 
+How does that compare to the normal way of doing things without `__STDC_WANT_LIB_EXT1__`?
+
 <dl>
 <dt><b>Happy path</b>
 <dd>
