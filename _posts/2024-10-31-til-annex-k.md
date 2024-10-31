@@ -137,7 +137,7 @@ int main() {
 
 ...for _every instance_ that you want to do `strlen_s()` or `fopen_s()` or `strcpy_s()`. That's a good way to go insane.
 
-So obviously you're not going to write platform-dependent code _just to do basic `printf()` and `strcpy()`_ but what about wrapping all that `#ifdef __STDC_LIB_EXT1__` `#else` stuff in a polyfill library?
+So obviously you're not going to write platform-dependent code _just to do basic `printf()` and `strcpy()`_ but what about wrapping all that `#ifdef __STDC_LIB_EXT1__` `#else` stuff in a library?
 
 There were two promising-looking libraries that I found via a quick Google search:
 
