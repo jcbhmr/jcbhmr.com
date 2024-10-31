@@ -11,16 +11,16 @@ Also check out [Field experience with Annex K (2015)](https://www.open-std.org/j
 
 What's the point of the `_s()` functions? They check their arguments for more invariants like "will call the constraint handler if the stream is null, the string is null, the `bufsz` is zero, or the buffer would write out-of-bounds beyond the specified length". That seems like a good idea, right? Yeah! It does!
 
-<table align=center>
-<thead><tr><td><th>Normal<th>Annex K
-<tbody><tr><th>Happy path<td>
+<dl>
+<dt><b>Happy path</b>
+<dd>
 
 ```c
 FILE *file = fopen("hello.txt", "r");
 // file is OK.
 ```
 
-<td>
+<dd>
 
 ```c
 FILE *file;
@@ -28,14 +28,15 @@ errno_t err = fopen_s(&file, "hello.txt", "r");
 // file is OK
 ```
 
-<tr><th>Sad path<td>
+<dt><b>Sad path</b>
+<dd>
 
 ```c
 FILE *file = fopen("notexist.txt", "r");
 // file is NULL, errno is set.
 ```
 
-<td>
+<dd>
 
 ```c
 FILE *file;
@@ -43,14 +44,15 @@ errno_t err = fopen_s(&file, "notexist.txt", "r");
 // file is NULL, err is set.
 ```
 
-<tr><th>Bad path<td>
+<dt><b>Bad path</b>
+<dd>
 
 ```c
 FILE *file = fopen(NULL, NULL);
 // file is NULL, errno is set. Same as sad path.
 ```
 
-<td>
+<dd>
 
 ```c
 FILE *file;
@@ -58,7 +60,7 @@ errno_t err = fopen_s(&file, NULL, NULL);
 // Constraint violated. Abort with message.
 ```
 
-</table>
+</dl>
 
 <details><summary><sup>Yes, you can customize the constraint handler to just log to a file and continue on as though nothing happened.</sup></summary>
 
@@ -70,9 +72,7 @@ set_constraint_handler_s(my_awesome_handler);
 
 </details>
 
-Notice how the normal `fopen()` has the same return value (possibly different `errno`) to **indicate different levels of bad-ness of errors**? That's kinda what this `fopen_s()` was trying to improve. At least, that's my reading of it. Think of it **like Rust's `panic!()` vs a returned `Result<String, std::io::Error>`**. It also probably helps stop some buffer overflow attacks by providing `size_of_dest` arguments to avoid overflowing any `dest` buffers like `strcpy_s()` and `sprintf_s()`.
-
-It's a similar "happy path" vs "bad path" thing with other functions like `gets_s()` (`gets()` was removed from the standard in C11).
+Notice how the normal `fopen()` has the same return value (possibly different `errno`) to indicate different levels of bad-ness of errors? That's kinda what this `fopen_s()` was trying to improve. At least, that's my reading of it. I think of it like Rust's `panic!()` vs a returned `Result<String, std::io::Error>`. It also probably helps stop some buffer overflow attacks by providing `size_of_dest` arguments to avoid overflowing any `dest` buffers like `strcpy_s()` and `gets_s()`.
 
 > ```c
 > char* gets( char* str ); // (removed in C11)
@@ -85,27 +85,20 @@ It's a similar "happy path" vs "bad path" thing with other functions like `gets_
 >
 > WARNING: Never use gets().
 
-<table align=center>
-<thead><tr><th>Bad<th>Good
-<tbody><tr><td>
-
 ```c
+// BAD
 char buffer[1000];
 gets(buffer);
+// ⚠️ Could write >1000 chars to `buffer`!
 ```
 
-⚠️ Could write >1000 chars to `buffer`!
-
-<td>
 
 ```c
+// GOOD
 char buffer[1000];
 gets_s(buffer, sizeof(buffer));
+// This will stop at 1000 chars.
 ```
-
-This will stop at 1000 chars.
-
-</table>
 
 ## The problem
 
