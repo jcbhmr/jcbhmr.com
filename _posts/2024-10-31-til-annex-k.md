@@ -7,7 +7,7 @@ Annex K is the technical name. Other common keywords are `__STDC_LIB_EXT1__ ` an
 
 Also check out [Field experience with Annex K (2015)](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1967.htm) and the [Bounds checking - cppreference.com](https://en.cppreference.com/w/c/error#Bounds_checking) technical documentation.
 
-The gist of it that you can/could do this:
+The gist of it is that you can/could do this:
 
 ```c
 #define __STDC_WANT_LIB_EXT1__ 1
