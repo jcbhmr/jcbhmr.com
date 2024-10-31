@@ -139,7 +139,7 @@ So obviously you're not going to write platform-dependent code _just to do basic
 
 There were two promising-looking libraries that I found via a quick Google search:
 
-- [safec: Safe C Library website](https://rurban.github.io/safeclib/doc/safec-3.8/index.html) [GitHub page](https://github.com/rurban/safeclib) ⭐335
+- [safec: Safe C Library website](https://rurban.github.io/safeclib/) [GitHub page](https://github.com/rurban/safeclib) ⭐335
 - [sbaresearch/slibc: Implementation of C11 Annex K "Bounds-checking interfaces" ISO/IEC 9899:2011](https://github.com/sbaresearch/slibc) ⭐14
 
 So... if you want to (or are required to by security stuff) to use `_s()` functions but also don't want to limit yourself to just MSVC then you can use one of those ☝ libraries.
