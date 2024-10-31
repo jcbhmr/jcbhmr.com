@@ -13,7 +13,7 @@ The gist of it that you can/could do this:
 #define __STDC_WANT_LIB_EXT1__ 1
 #include <stdio.h>
 #ifndef __STDC_LIB_EXT1__
-#error "Bounds-checking interfaces are not supported on this compiler."
+#error "C11 Annex K not available"
 #endif
 #include <stddef.h>
 #include <locale.h>
