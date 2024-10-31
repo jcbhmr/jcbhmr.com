@@ -116,7 +116,7 @@ gets_s(buffer, sizeof(buffer));
 
 ## The problem
 
-**They aren't implemented everywhere.** The `_s()` functions are an _extension_ that isn't available in libc implementations like glibc from GNU for lots of Linux stuff. There's other minor issues like it not being ergonomic for multithreading and the common mistake of doing `sizeof(src)` instead of `sizeof(dest)` for things like `strcpy_s()`, but that all pales in comparison to the availablity problem.
+**They aren't implemented everywhere.** The `_s()` functions are an _extension_ that isn't available in libc implementations like GNU's glibc. There's other minor issues like it not being ergonomic for multithreading and the common mistake of doing `sizeof(src)` instead of `sizeof(dest)` for things like `strcpy_s()`, but that all pales in comparison to the availablity problem.
 
 Most online information I can find seems to indicate that MSVC is the only major compiler/libc that has implemented Annex K.
 
