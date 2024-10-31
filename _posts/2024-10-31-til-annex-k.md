@@ -66,7 +66,7 @@ errno_t err = fopen_s(&file, "notexist.txt", "r");
 
 ```c
 FILE *file = fopen(NULL, NULL);
-// file is NULL, errno is set. Same as sad path.
+// idk.
 ```
 
 <dd>
