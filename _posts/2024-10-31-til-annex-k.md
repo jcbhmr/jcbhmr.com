@@ -7,6 +7,10 @@ Annex K is the technical name. Other common keywords are `__STDC_LIB_EXT1__ ` an
 
 Also check out [Field experience with Annex K (2015)](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1967.htm) and the [Bounds checking - cppreference.com](https://en.cppreference.com/w/c/error#Bounds_checking) technical documentation.
 
+## The goal
+
+What's the point of the `_s()` functions? They check their arguments for more invariants like "will call the constraint handler if the stream is null, the string is null, the `bufsz` is zero, or the buffer would write out-of-bounds beyond the specified length". That seems like a good idea, right? Yeah! It does!
+
 The gist of it is that you can/could do this:
 
 ```c
@@ -23,10 +27,6 @@ int main() {
   return 0;
 }
 ```
-
-## The goal
-
-What's the point of the `_s()` functions? They check their arguments for more invariants like "will call the constraint handler if the stream is null, the string is null, the `bufsz` is zero, or the buffer would write out-of-bounds beyond the specified length". That seems like a good idea, right? Yeah! It does!
 
 <dl>
 <dt><b>Happy path</b>
@@ -123,14 +123,19 @@ gets_s(buffer, sizeof(buffer));
 
 Most online information I can find seems to indicate that MSVC is the only major compiler/libc that has implemented Annex K.
 
-Given that these fancy `_s()` functions aren't everywhere that your code needs to compile, why would you bother writing code like this:
+Given that these fancy `_s()` functions aren't everywhere that your code needs to compile you'd need to write code like this:
 
 ```c
+#define __STDC_WANT_LIB_EXT1__ 1
+#include <stdio.h>
+
+int main() {
 #ifdef __STDC_LIB_EXT1__
-  printf_s("data results: %s, %d, %lu\n", a, b, c);
+    printf_s("data results: %s, %d, %lu\n", a, b, c);
 #else
-  printf("data results: %s, %d, %lu\n", a, b, c);
+    printf("data results: %s, %d, %lu\n", a, b, c);
 #endif
+}
 ```
 
 ...for _every instance_ that you want to do `strlen_s()` or `fopen_s()` or `strcpy_s()`. That's a good way to go insane.
