@@ -114,6 +114,8 @@ gets_s(buffer, sizeof(buffer));
 // This will stop at 1000 chars.
 ```
 
+The `_s()` function seems pretty nice to stop common places where buffer overflows can happen.
+
 ## The problem
 
 **They aren't implemented everywhere.** The `_s()` functions are an _extension_ that isn't available in libc implementations like GNU's glibc. There's other minor issues like it not being ergonomic for multithreading and the common mistake of doing `sizeof(src)` instead of `sizeof(dest)` for things like `strcpy_s()`, but that all pales in comparison to the availablity problem.
