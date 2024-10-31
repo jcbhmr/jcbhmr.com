@@ -16,9 +16,6 @@ The gist of it is that you can/could do this:
 ```c
 #define __STDC_WANT_LIB_EXT1__ 1
 #include <stdio.h>
-#ifndef __STDC_LIB_EXT1__
-#error "C11 Annex K not available"
-#endif
 
 int main() {
   printf_s("Hello %s!\n", "Alan Turing");
