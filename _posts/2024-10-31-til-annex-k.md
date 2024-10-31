@@ -19,8 +19,6 @@ The gist of it is that you can/could do this:
 #ifndef __STDC_LIB_EXT1__
 #error "C11 Annex K not available"
 #endif
-#include <stddef.h>
-#include <locale.h>
 
 int main() {
   printf_s("Hello %s!\n", "Alan Turing");
