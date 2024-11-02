@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Use zig cc to cross-compile a CMake project
+redirect_from: /blog/zig-cc-cmake
 ---
 
 Imagine this: You're on a new M1 MacBook[^1]. You need to compile a CMake project to run on your friend's Windows x86-64 PC. How do you do that? Use `zig cc` and friends! 🚀
