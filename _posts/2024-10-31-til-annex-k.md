@@ -1,6 +1,7 @@
 ---
 layout: post
 title: TIL C11 Annex K exists but you shouldn't use it
+redirect_from: /blog/til-annex-k
 ---
 
 Annex K is the technical name. Other common keywords are `__STDC_LIB_EXT1__ ` and `__STDC_WANT_LIB_EXT1__`. Annex K defines the "secure" `_s` suffix stuff like `sprintf_s()` and `scanf_s()`.
