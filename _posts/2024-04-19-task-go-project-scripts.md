@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Use task.go for your Go project scripts
+redirect_from: /blog/task-go-project-scripts
 ---
 
 **TL;DR:** `go run task.go <task_name>` makes your scripts cross-platform.
