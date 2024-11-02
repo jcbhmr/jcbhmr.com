@@ -2,13 +2,14 @@ remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
+  - jekyll-redirect-from
+markdown: GFM
+permalink: pretty
 title: Jacob Hummer
 description: A far too meticulous web developer 💻
 author:
   name: Jacob Hummer
   email: jcbhmr@outlook.com
-
 minima:
   skin: auto
   social_links:
@@ -17,7 +18,3 @@ minima:
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/jcbhmr" }
     - { platform: x, user_url: "https://x.com/jcbhmr" }
     - { platform: youtube, user_url: "https://www.youtube.com/@jcbhmr" }
-
-collections:
-  posts:
-    permalink: /blog/:title
