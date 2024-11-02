@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Put dev dependencies in tools.go
+redirect_from: /blog/dev-dependencies-tools-go
 ---
 
 **Problem:** You have a `./gen.go` script that uses `github.com/arkady-emelyanov/go-shellparse` to do some stuff. When you run `go mod tidy` it removes `github.com/arkady-emelyanov/go-shellparse` from your `go.mod` because `./gen.go` has a `//go:build ignore` in it... which means `go mod tidy` doesn't include it in its checks. 😔
