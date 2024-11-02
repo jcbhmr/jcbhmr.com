@@ -1,6 +1,7 @@
 ---
 layout: post
 title: TIL emalloc() auto-exits on out-of-memory errors
+redirect_from: /blog/til-emalloc
 ---
 
 I was tired of writing this over and over:
