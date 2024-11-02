@@ -1,8 +1,6 @@
 ---
-permalink: /
 layout: home
 title: ""
-list_title: Blog
 ---
 
 <table style="border: none;">
