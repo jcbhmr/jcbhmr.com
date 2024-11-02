@@ -1,6 +1,4 @@
 remote_theme: jekyll/minima
-markdown: GFM
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
