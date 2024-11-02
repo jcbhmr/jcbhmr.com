@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Use cosmocc to cross‐compile a CMake project
+redirect_from: /blog/cosmocc-cmake
 ---
 
 We know [how to compile an Autotools project using `cosmocc`](https://github.com/jart/cosmopolitan/tree/master/tool/cosmocc#building-open-source-software) but how do you compile a CMake project with `cosmocc`?
