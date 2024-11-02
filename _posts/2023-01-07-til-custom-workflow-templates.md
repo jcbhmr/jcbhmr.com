@@ -1,6 +1,7 @@
 ---
 layout: post
 title: TIL you can create your own GitHub Actions workflow templates
+redirect_from: /blog/til-custom-workflow-templates
 ---
 
 So you know how there's this wizard that you can use to create new GitHub Actions right? It turns out that there's a way to add your own GitHub Actions templates there!
