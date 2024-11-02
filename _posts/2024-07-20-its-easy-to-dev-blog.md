@@ -1,6 +1,7 @@
 ---
 layout: post
 title: It's easy to dev blog
+redirect_from: /blog/its-easy-to-dev-blog
 ---
 
 ...the hard part is writing the words.
