@@ -1,6 +1,7 @@
 ---
 layout: home
 title: ""
+list_title: Posts
 ---
 
 <table style="border: none;">
