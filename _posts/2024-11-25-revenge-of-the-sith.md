@@ -18,9 +18,11 @@ Matthew Stover is really good at writing varying-length sentences. There's a cad
 > &emsp; Jedi Master. General in the Grand Army of the Republic. And yet, inside, he feels like he's none of these things. \
 > ...
 
+<sup>Go read the book.</sup>
+
 Notice how the length of the sentence varies from a single emphasized word to a longer descriptive sentence? This Emphasis makes you read _as though someone was speaking the words aloud_ instead of just reading words on a page and processing their meaning. It's almost like reading the script for a play where you can imagine the intonations and inflections as the performers emphasize words and insert pauses.
 
-Stover also uses lots of **anaphora** which is a word I just learned today. <dfn>anaphora</dfn> is the literary device of repeating a sentence structure but changing a word or two to convey a message in a _rhythm_. It's like rhyming but for tone and flow instead of word syllables. The example above uses "a $x who $y" repeated over a few sentences. Can't you just imagine a passionate speech being given where the speaker is saying "This is Obi-Wan Kenobi: ..." on stage? I can. This style of writing feels _powerful_. It _feels_ like it's _grand_. It reads like you could imagine your grandfather or other parental figure reading it to you as a bedtime story.
+Stover also uses lots of **anaphora** which is a word I just learned today. **Anaphora** is the literary device of repeating a sentence structure but changing a word or two to convey a message in a _rhythm_. It's like rhyming but for tone and flow instead of word syllables. The example above uses "a $x who $y" repeated over a few sentences. Can't you just imagine a passionate speech being given where the speaker is saying "This is Obi-Wan Kenobi: ..." on stage? I can. This style of writing feels _powerful_. It _feels_ like it's _grand_. It reads like you could imagine your grandfather or other old wise parental figure reading it to you as a bedtime story.
 
 Here's an excerpt from another Star Wars book to emphasize the contrast in writing styles:
 
@@ -28,7 +30,7 @@ Here's an excerpt from another Star Wars book to emphasize the contrast in writi
 
 This reads much more like simple _here's what's happening_ text. It's one sentence in a paragraph of descriptions similar to it. Long sentences describing physical things. Stover uses symbolism, metaphor, and other literary rhetoric to get you invested in swaying your head to the rhythmic anaphora of those poetic excerpts.
 
-I think the "This is $x" verselets are some of the greatest character exposition ever done in Star Wars. The crown jewel of this has to be the finale of Anakin Skywalker's transformation into Darth Vader:
+I think the "This is $x" verselets are some of the coolest character exposition ever done in Star Wars. The crown jewel of this has to be the finale of Anakin Skywalker's transformation into Darth Vader:
 
 > This is how it feels to be Anakin Skywalker, forever: \
 > &emsp; The first dawn of light in your universe brings pain. \
@@ -38,7 +40,7 @@ I think the "This is $x" verselets are some of the greatest character exposition
 > &emsp; Mechanisms hardwired into your chest breathe for you. They will pump oxygen into your bloodstream forever. \
 > ...
 
-Go read the rest of this elegy for yourself!
+<sup>Go read the book.</sup>
 
 But it's not just the excellent poetry that makes this book so good, it's also the use of _metaphorical comparisons_ and other symbolic imagery instead of literal descriptions.
 
@@ -54,4 +56,24 @@ These metaphors aren't just treated as coincidental throwaway lines that happen 
 
 The metaphor of how Anakin's walls around his furnace heart ice over and the dragon worms its way into his skull to chew on his brain with whispers of "All things die, Anakin Skywalker. Even stars burn out." is really good imagery. It means that Stover doesn't need to waste time describing how "Anakin used his fear to fuel his anger which fueled his hate" or how "Anakin was afraid of losing those he cared about more than anything else in the world".
 
-Instead, we get a _metaphor_ that concisely conveys those fears and how they weigh on Anakin without needing vague emotional words like "afraid", "worried", "apprehensive", etc. Instead, we get a symbol that tells the reader exactly what _type_ of fear Anakin feels. The cold kind. The dead kind. That kind of fear is something that you can't easily explain without a situation or a metaphor that symbolizes that situation. Instead of describing "this fear was $x and $y" Stover expertly uses the dragon to represent that complex idea.
+Instead, we get a _metaphor_ that concisely conveys those fears and how they weigh on Anakin without needing vague emotional words like "afraid", "worried", "apprehensive", etc. Instead, we get a symbol that tells the reader exactly what _type_ of fear Anakin feels. The cold kind. The dead kind. That kind of fear is something that you can't easily explain without a situation or a metaphor that symbolizes that situation. Instead of describing "this fear was $x and $y" Stover expertly uses the dragon to represent that complex idea. Instead of "Anakin struggled with his emotions" we get a detailed account (using the dragon metaphor) of how Anakin finally gives in to the dragon and rushes to save Palpatine from Mace Windu.
+
+None of the other Star Wars movie novelizations have this level of _storytelling_. Some of the other Star Wars books in the Expanded Universe are of the same caliber as Revenge of the Sith by Matthew Stover, but not many.
+
+Stover is one of the few authors that I've seen do second-person narration. You saw it in the "this is how it feels to be $x" paragraph above: "the light burns _you_". I just thought that was interesting.
+
+There's also some outside-the-main-plot text in the introduction that emphasizes my recurring point that this story **feels like a perfect bedtime story**. The introduction quite literally says:
+
+> This story happened a long time ago in a galaxy far, far away. It is already over. Nothing can be done to change it. \
+> &emsp; It is a story of love and loss, brotherhood and betrayal, courage and sacrifice and the death of dreams. It is a story of the blurred line between our best and our worst. \
+> ...
+
+<sup>Go read the book.</sup>
+
+Doesn't that feel like it was meant to be read aloud to a listener? It does to me. It makes the book feel like a _story_ and not just a diary or a Wookiepedia entry. There's also some interspersed philosophical talk about how "the dark" (not necessarily the Dark Side of the Force) works. It's almost as though this is one of Aesop's Fables and it has a message that it is attempting to convey even if it is like 100x as long as your typical fable.
+
+And did I mention that the story is riveting? The plotline is quite literally that the devil of Star Wars himself (described by Count Dooku as "a black hole") infiltrates the galactic government, becomes a dictator, seduces the Jesus figure (Anakin Skywalker "the Chosen One"), wipes out the Faithful good guys, and gets that Jesus figure to fight his best friend and kill his wife. It really is a story and a half.
+
+I like the Revenge of the Sith novelization. It was a pretty good read.
+
+If you're in the United States, check out [Libby](https://libbyapp.com/) to see if you can get Revenge of the Sith (book or audiobook) through your library system (FREE!). It's also available [on Amazon](https://www.amazon.com/Star-Wars-Episode-III-Revenge/dp/0345428846) and [on Audible](https://www.audible.com/pd/Star-Wars-Episode-III-Revenge-of-the-Sith-Audiobook/B002V0K4AS)
