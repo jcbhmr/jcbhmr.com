@@ -3,7 +3,7 @@ layout: post
 title: uv is awesome
 ---
 
-[astral-sh/uv](https://github.com/astral-sh/uv) is the best Python package manager that I've used. Granted, I haven't used a lot; but still. It's pretty good.
+[astral-sh/uv](https://github.com/astral-sh/uv) is the best Python AiO tool that I've used. Granted, I haven't used a lot; but still. It's pretty good.
 
 - It **manages your Python version** so you don't have to wrangle with that _at all_.
 - It **has `--dev` dependencies** unlike plain pip
