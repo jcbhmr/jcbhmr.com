@@ -40,13 +40,13 @@ The point is that sometimes you just want a release-and-debug always-there canno
 #include <stdio.h>
 #include <stdlib.h>
 
-#define release_assert(x) ((void)((x) || (release_assert_fail(#x, __FILE__, __LINE__), 0)))
-
-inline void release_assert_fail(const char *expr, const char *file, int line) {
+static void release_assert_fail(const char *expr, const char *file, int line) {
 	fprintf(stderr, "Assertion failed: %s (%s: %d)\n", expr, file, line);
 	fflush(NULL);
 	abort();
 }
+
+#define release_assert(x) ((void)((x) || (release_assert_fail(#x, __FILE__, __LINE__), 0)))
 ```
 
 ```c
