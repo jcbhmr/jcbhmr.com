@@ -26,7 +26,7 @@ int main() {
   // ...
 }
 
-non_zero_uint uint_to_non_zero_uint(int x) {
+non_zero_uint uint_to_non_zero_uint(unsigned int x) {
   assert(x > 0);
   return x;
 }
@@ -50,7 +50,7 @@ static void release_assert_fail(const char *expr, const char *file, int line) {
 ```
 
 ```c
-non_zero_uint uint_to_non_zero_uint(int x) {
+non_zero_uint uint_to_non_zero_uint(unsigned int x) {
   release_assert(x > 0);
   return x;
 }
