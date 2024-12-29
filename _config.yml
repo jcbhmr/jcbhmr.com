@@ -1,4 +1,5 @@
-remote_theme: jekyll/minima@6b9b78dad3e5c9f733c901e10287465735b36169 # Oct 2, 2024
+# remote_theme: jekyll/minima@6b9b78dad3e5c9f733c901e10287465735b36169 # Oct 2, 2024
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
