@@ -1,6 +1,8 @@
 # Use the unpublished v3 of minima.
 remote_theme: jekyll/minima@6b9b78dad3e5c9f733c901e10287465735b36169 # Oct 2, 2024
 plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-redirect-from
 markdown: GFM
 permalink: pretty
