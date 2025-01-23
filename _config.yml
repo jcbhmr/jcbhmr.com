@@ -1,5 +1,5 @@
 # Use the unpublished v3 of minima.
-remote_theme: jekyll/minima@6b9b78dad3e5c9f733c901e10287465735b36169 # Oct 2, 2024
+remote_theme: jekyll/minima
 # https://pages.github.com/versions/
 plugins:
   - jekyll-feed
@@ -14,8 +14,6 @@ author:
 minima:
   skin: auto
   social_links:
-    - { platform: devto, user_url: "https://dev.to/jcbhmr" }
     - { platform: github, user_url: "https://github.com/jcbhmr" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/jcbhmr" }
-    - { platform: x, user_url: "https://x.com/jcbhmr" }
     - { platform: youtube, user_url: "https://www.youtube.com/@jcbhmr" }
