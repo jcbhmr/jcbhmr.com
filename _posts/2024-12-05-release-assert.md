@@ -1,5 +1,4 @@
 ---
-layout: post
 title: assert.h even in release mode
 ---
 

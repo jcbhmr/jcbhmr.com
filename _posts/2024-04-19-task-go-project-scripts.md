@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Use task.go for your Go project scripts
 redirect_from: /blog/task-go-project-scripts
 ---

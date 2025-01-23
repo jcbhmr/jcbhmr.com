@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Use cosmocc to cross‐compile a CMake project
 redirect_from: /blog/cosmocc-cmake
 ---

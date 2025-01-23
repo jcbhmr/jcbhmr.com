@@ -1,5 +1,4 @@
 ---
-layout: post
 title: How I did Go abstract classes one time
 ---
 

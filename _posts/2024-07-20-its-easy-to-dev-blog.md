@@ -1,5 +1,4 @@
 ---
-layout: post
 title: It's easy to dev blog
 redirect_from: /blog/its-easy-to-dev-blog
 ---
@@ -12,7 +11,7 @@ Here's a basic step-by-step to creating the _most basic_ dev blog that looks _re
 
 You get a ready-made GitHub Pages `<username>.github.io` domain that's perfect for your basic website needs. Just create a new repository like `jcbhmr.github.io` but replace `jcbhmr` with your GitHub username.
 
-![](https://i.imgur.com/kvJzsQW.png)
+![](/media/2024-07-20-002.png)
 
 ## 2. Enable GitHub pages
 
@@ -20,7 +19,7 @@ In your repository settings you need to turn on GitHub Pages to make it pull [Je
 
 You can find the menu to turn on GitHub Pages in the Settings tab of your repository under the Pages sidebar menu.
 
-![](https://i.imgur.com/qgibiD0.png)
+![](/media/2024-07-20-003.png)
 
 Make sure you set the source branch!
 
@@ -30,7 +29,7 @@ After you hit Save you should be able to visit `<username>.github.io` as a websi
 
 The default Primer GitHub Pages theme is nice... but it lacks a homepage index of your most recent blog posts. 😢 IMO the best path forward is to switch to another default theme: the builtin default [Jekyll Minima theme](https://github.com/jekyll/minima).
 
-![](https://i.imgur.com/8FJxh9B.png)
+![](/media/2024-07-20-001.png)
 
 To do that, create a `_config.yml` file in your GitHub repository that you created in step 1 and add the following line:
 
@@ -42,21 +41,7 @@ remote_theme: jekyll/minima
 
 [📚⚙️ More Minima settings!](https://github.com/jekyll/minima/blob/master/_config.yml)
 
-Why again do you need to do this? Because Minima theme has a builtin no-config default blog feed on the homepage that makes it perfect for near-zero-config setups.
-
-We also need to _use_ this Minima theme for our homepage. You'll need to also create an `index.md` file:
-
-<div><code>index.md</code></div>
-
-```md
----
-permalink: /
-layout: home
----
-
-Any **content** you [put here](#) will appear _on the homepage_
-<span style="color: red;">above the recent posts section</span>.
-```
+Why again do you need to do this? Because we need to set the theme to _something_ and Minima provides a good default blog style & setup. If you prefer GitHub-Flavored Markdown to the default Kramdown you'll also want to add `markdown: GFM` to `_config.yml`.
 
 ## 4. Write your content!
 
@@ -66,7 +51,6 @@ Make a `_posts/` folder and then create a `_posts/2020-01-01-hello-world.md` doc
 
 ```md
 ---
-layout: post
 title: Hello world!
 ---
 
@@ -79,7 +63,7 @@ Now you have your new fancy dev blog post on _your own website_! 🥳 And it onl
 
 <sub>It should look something like this</sub>
 
-![](https://i.imgur.com/YSVkQtt.png)
+![](/media/2024-07-20-004.png)
 
 ## Or just use something else
 

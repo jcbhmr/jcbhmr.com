@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Use zig cc to cross-compile a CMake project
 redirect_from: /blog/zig-cc-cmake
 ---
@@ -129,7 +128,7 @@ Tada! 🥳 You have now built a Windows x86-64 `.exe` file from your M1 MacBook[
 
 <tr><td>
 
-![hello world alert box](https://i.imgur.com/3zZNPML.png)
+![hello world alert box](/media/2024-07-19-001.png)
 
 </table>
 

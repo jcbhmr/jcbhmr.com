@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Write your Rust project scripts in task.rs
 redirect_from: /blog/task-rs-project-scripts
 ---

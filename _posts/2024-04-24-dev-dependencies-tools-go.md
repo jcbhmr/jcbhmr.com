@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Put dev dependencies in tools.go
 redirect_from: /blog/dev-dependencies-tools-go
 ---

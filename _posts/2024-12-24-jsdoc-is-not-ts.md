@@ -1,5 +1,4 @@
 ---
-layout: post
 title: JSDoc types are not TypeScript types
 ---
 
@@ -11,7 +10,7 @@ It doesn't work the same. JSDoc types aren't recognized by [npm](https://www.npm
 
 **npm** doesn't display the "TS" badge next to the package name **unless you have a `"types": "./dist/index.d.ts"` or similar `types` key in your `package.json`**.
 
-![image](https://github.com/user-attachments/assets/322601a2-a334-4aeb-ac87-81719a4c90fc)
+![image](/media/2024-12-24-001.png)
 
 [📚 Read the official GitHub/npm announcement](https://github.blog/changelog/2020-12-16-npm-displays-packages-with-bundled-typescript-declarations/)
 

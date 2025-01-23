@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Fix "cannot take address of {value}" in Go
 redirect_from: /blog/cannot-take-address-of-value-go
 ---

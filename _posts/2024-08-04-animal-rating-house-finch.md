@@ -1,12 +1,11 @@
 ---
-layout: post
 title: "Animal Rating: The House Finch"
 ---
 
 The House Finch is the avian equivalent of that friend who can turn any mundane situation into a party. Think about it. You never see just one house finch. There's always a whole [chirping of finches](https://allcollectivenouns.com/animal/collective-noun-for-finches). House finches are true extroverts.
 
 <table><td>
-<a title="Rhododendrites, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:House_finch_(33688)2.jpg"><img width="512" alt="House finch (33688)2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/House_finch_%2833688%292.jpg/512px-House_finch_%2833688%292.jpg?20201124230402"></a>
+<a title="Rhododendrites, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:House_finch_(33688)2.jpg"><img width="512" alt="House finch (33688)2" src="/media/2024-08-04-001.jpg"></a>
 <tr><td align=center>Rare sighting of a solo house finch
 </table>
 
@@ -15,7 +14,7 @@ The House Finch is the avian equivalent of that friend who can turn any mundane 
 Female house finches are grayish brown. That's their special power. Kinda a second-rate ability if you ask me. But they do naturally blend in with the background of tree branches and bark or that spot in your backyard that was originally a flower bed but is now an unkempt carpet of brown and gray leaves. There's just one problem: the house finch is too stupid to know that it's hidden and breaks the illusion with loud chirping noises and jerky head movements.
 
 <table><td>
-<img src="https://github.com/user-attachments/assets/26449c13-2530-4cac-aad0-dee32a51858d"><br>
+<img src="/media/2024-08-04-002.jpg"><br>
 <sup>Photo by <a href="https://unsplash.com/@songsofnature?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Vijayalakshmi Nidugondi</a> on <a href="https://unsplash.com/photos/a-small-bird-sitting-on-a-branch-of-a-tree-DkSO-eBWirI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></sup>
 <tr><td>This is totally a GIF. Wait for it to twitch its head.
 </table>
@@ -26,7 +25,8 @@ Female house finches are grayish brown. That's their special power. Kinda a seco
 
 **Cats.**
 
-![image](https://github.com/user-attachments/assets/522a27ac-6c0d-40b5-a218-6cb84073b567)
+![image](/media/2024-08-04-003.jpg)
+<sup><a href="https://www.flickr.com/photos/26344495@N05/15378826579">Photo by Ivan Radic on Flickr</a></sup>
 
 And being misidentified as a sparrow.
 
@@ -34,13 +34,13 @@ And being misidentified as a sparrow.
 
 Two, but they don't walk.
 
-<img width=400 src="https://github.com/user-attachments/assets/abb7b0b9-66c9-4a8c-b8d8-17aee9eb1fad">
+<img width=400 src="/media/2024-08-04-004.png">
 
 #### Rise of modern House Finch Empire
 
 The House Finch empire has drastically increased in the last few decades. Soon they may even colonize the United States' flat barren pancake states that currently split the Finch nation in two.
 
-![image](https://github.com/user-attachments/assets/732c1035-f5e0-4d8b-9668-2093a51ccc9c)<br>
+![image](/media/2024-08-04-005.png)<br>
 <sup>From [the House Finch Wikipedia page](https://en.wikipedia.org/wiki/House_finch)</sup>
 
 #### What if it fought a bear?

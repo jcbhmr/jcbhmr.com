@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Chunk Base map to CSV
 ---
 
@@ -28,7 +27,7 @@ CB3TooltipManager.onPoiDrawn = oldOnPoiDrawn;
 CSV.stringify(table);
 ```
 
-![screenshot of me doing that](https://github.com/user-attachments/assets/c8ee0672-a7f9-4698-a6ee-9bdee6a3f16f)
+![screenshot of me doing that](/media/2024-12-05-001.png)
 
 ## How it works
 

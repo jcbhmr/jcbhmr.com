@@ -1,5 +1,4 @@
 ---
-layout: post
 title: TIL C11 Annex K exists but you shouldn't use it
 redirect_from: /blog/til-annex-k
 ---

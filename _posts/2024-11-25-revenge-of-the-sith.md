@@ -1,10 +1,9 @@
 ---
-layout: post
 title: "Star Wars: Episode III - Revenge of the Sith novelization review"
 ---
 
 <p align=center>
-  <img alt="Revenge of the Sith novel cover" src="https://upload.wikimedia.org/wikipedia/en/8/88/RevengeOfTheSithNovel.jpg">
+  <img alt="Revenge of the Sith novel cover" src="/media/2024-11-25-001.jpg">
 </p>
 
 **TL;DR:** It's really good.

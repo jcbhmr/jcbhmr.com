@@ -6,11 +6,11 @@ HelloFresh is a subscription service that sends you meal kits with a bunch of fr
 
 And how could I forget the excellent visual presentation? They have **so many pictures** it's **great**!
 
-![image](https://github.com/user-attachments/assets/e6b490a8-29bd-45d3-bdb1-f0ee1a97772b)
+![image](/media/2024-12-31-001.png)
 
 The recipes even comes with pictures for each step in the directions:
 
-![image](https://github.com/user-attachments/assets/3eb8fd56-3eb0-415b-b23f-0f3105019cbf)
+![image](/media/2024-12-31-002.png)
 
 This is really helpful when you're wondering what "cut crosswise with diagonal incisions" means. You just look at the picture and copy that.
 
