@@ -1,5 +1,6 @@
 ---
 title: Go make struct uncopyable
+render_with_liquid: false
 ---
 
 Well, it doesn't actually _prevent_ it; it just gives you a `go vet` error.
