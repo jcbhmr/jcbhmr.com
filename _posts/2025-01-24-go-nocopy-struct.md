@@ -1,14 +1,11 @@
 ---
 title: Go make struct uncopyable
-render_with_liquid: false
 ---
 
 Well, it doesn't actually _prevent_ it; it just gives you a `go vet` error.
 
 ```go
 package main
-
-import "fmt"
 
 type noCopy struct{}
 
@@ -23,7 +20,7 @@ type CannotBeCopied struct {
 func main() {
 	joeSmith := CannotBeCopied{Name: "Joe Smith"}
 	joeSmithCopy := joeSmith
-	fmt.Println(&joeSmith, &joeSmithCopy)
+	_ = joeSmithCopy
 }
 ```
 
@@ -31,8 +28,6 @@ func main() {
 ./main.go:17:18: assignment copies lock value to joeSmithCopy: CannotBeCopied contains noCopy
 
 Go vet failed.
-
-&{{} Joe Smith} &{{} Joe Smith}
 ```
 
 The trick here is that `go vet` knows that `.Lock()` and `.Unlock()` mean that a value is ✨special and it probably should be passed by `*TheLockableType` instead of via copy. This was introduced to underline the fact that `sync.Mutex` and friends (which have `.Lock()` and `.Unlock()` methods) should probably be passed by pointer, not by copy.
