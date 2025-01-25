@@ -13,8 +13,8 @@ func (*noCopy) Lock()   {}
 func (*noCopy) Unlock() {}
 
 type CannotBeCopied struct {
-	noCopy noCopy
-	Name   string
+	_    noCopy
+	Name string
 }
 
 func main() {
@@ -23,6 +23,8 @@ func main() {
 	_ = joeSmithCopy
 }
 ```
+
+https://go.dev/play/p/TA5aC4ldTOv
 
 ```
 ./main.go:17:18: assignment copies lock value to joeSmithCopy: CannotBeCopied contains noCopy
