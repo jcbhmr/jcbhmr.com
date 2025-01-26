@@ -35,3 +35,5 @@ func main() {
 https://go.dev/play/p/pwao1PGSlP-
 
 This same trick also works with Go `map` types. `func(...)` and `map[...]` types cannot be compared using `==` and `!=` value-based comparisons.
+
+Further reading about `func() == func()` on StackOverflow: https://stackoverflow.com/a/9644797
