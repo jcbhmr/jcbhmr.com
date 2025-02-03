@@ -20,6 +20,8 @@ Here are some screenshots of the GoatCounter dashboard information that you coul
 
 GoatCounter is a page view counter. It does that quite well. It is not a marketing analytics tool to track user behavior with custom events across sessions. For me, that's perfect. If you have a demo site, if you're publishing a static site blog, if you're experimenting with new web APIs on GitHub Pages, or anything else where you _just want a good page counter_ consider GoatCounter. So far I like it. The lack of a required GDPR consent notice is 🤩awesome. It's literally just a `<script>` tag with nothing else needed.
 
+<sup>This is not legal advice.</sup>
+
 <sup>P.S. GoatCounter also offers [an `<img>` tracking pixel counting mechanism](https://www.goatcounter.com/help/pixel) if you don't like JavaScript</sup>
 
 📚 Read more from the GoatCounter author:
