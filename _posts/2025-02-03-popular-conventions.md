@@ -2,6 +2,12 @@
 title: Some popular conventions that I've observed
 ---
 
+I'm a big believer in conventions. I like having clear directions for minor trivial details instead of hmmm-ing and haw-ing about what to do when _it's just not a big deal_ but also _you want to conform to the expectations of the ecosystem_. But when entering a _new_ ecosystem it's hard to get a feel for what the conventions are. For instance, if you're a new JavaScript programmer should you put your test code in `tests/`, `test/`, or `__tests__/`? There's not really a good answer on Google.
+
+This is a collection of some of these "what's the most popular way to $X?" questions and their results.
+
+_There may be more posts in this series. I'll probably want to write down some other search popularity results at some point._
+
 #### What name for the `rust-toolchain.toml` file?
 
 - ⭐ `rust-toolchain.toml` [8.6k](https://github.com/search?q=path%3A%2F%5Erust-toolchain%5C.toml%24%2F&type=code)
@@ -74,6 +80,21 @@ title: Some popular conventions that I've observed
 
 #### `.equal()` or `.equals()` in JavaScript?
 
-- `.equals()` [43.5k](https://github.com/search?q=%2F%5E%5Cs%2Bequals%5C%28.*%5C%7B%2F+%28language%3AJavaScript+OR+language%3ATypeScript%29&type=code)
+- ⭐ `.equals()` [43.5k](https://github.com/search?q=%2F%5E%5Cs%2Bequals%5C%28.*%5C%7B%2F+%28language%3AJavaScript+OR+language%3ATypeScript%29&type=code)
 - `.equal()` [13.8k](https://github.com/search?q=%2F%5E%5Cs%2Bequal%5C%28.*%5C%7B%2F+%28language%3AJavaScript+OR+language%3ATypeScript%29&type=code)
 
+#### `.equal()` or `.equals()` in general?
+
+- ⭐ `.equals()` [1.9M](https://github.com/search?q=%2Fequals%5C%28other%2F&type=code)
+- `.equal()` [134k](https://github.com/search?q=%2Fequal%5C%28other%2F&type=code)
+
+#### What file extension for C++?
+
+- ⭐ `*.cpp` [46.4M](https://github.com/search?q=path%3A*.cpp&type=code)
+- `*.cc` [6.8M](https://github.com/search?q=path%3A*.cc&type=code)
+- `*.cxx` [881k](https://github.com/search?q=path%3A*.cxx&type=code)
+
+#### What file extension for C++ modules?
+
+- ⭐ `*.ixx` [24.4k](https://github.com/search?q=path%3A*.ixx&type=code)
+- `*.cppm` [15.2k](https://github.com/search?q=path%3A*.cppm&type=code)
