@@ -25,7 +25,7 @@ Female house finches are grayish brown. That's their special power. Kinda a seco
 
 **Cats.**
 
-![image](/media/2024-08-04-003.jpg)
+![image](/media/2024-08-04-003.jpg)<br>
 <sup><a href="https://www.flickr.com/photos/26344495@N05/15378826579">Photo by Ivan Radic on Flickr</a></sup>
 
 And being misidentified as a sparrow.
