@@ -2,6 +2,8 @@
 title: GoatCounter is awesome
 ---
 
+**Update 2025/02/03:** See https://jcbhmr.com/2025/02/03/actually-maybe-need-cookie-consent/
+
 **[🐐 goatcounter.com](https://www.goatcounter.com/)**
 
 1. **It's free**
