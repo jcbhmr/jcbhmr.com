@@ -8,7 +8,7 @@ You know how you can do `//go:build windows` but then also `if runtime.GOOS == "
 if runtime.GOARCH == "wasm" && ??? {
   fmt.Println("You're using WASM with signext")
 } else if runtime.GOARCH == "wasm" {
-  fmt.Println("You're using WASM but without signext)
+  fmt.Println("You're using WASM but without signext")
 } else {
   fmt.Println("You're not using WASM at all")
 }
