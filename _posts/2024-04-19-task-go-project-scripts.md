@@ -3,6 +3,8 @@ title: Use task.go for your Go project scripts
 redirect_from: /blog/task-go-project-scripts
 ---
 
+**Update 2025/03/06:** See https://jcbhmr.com/2025/03/06/go-tool-scripts/
+
 **TL;DR:** `go run task.go <task_name>` makes your scripts cross-platform.
 
 ```go
