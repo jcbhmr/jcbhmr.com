@@ -1,5 +1,5 @@
 # Use the unpublished v3 of minima.
-remote_theme: jekyll/minima@cc7d230eccdb476713310f41d9c19c484918db05 # Feb 24, 2025
+remote_theme: jekyll/minima@43f3ed05dc0f6842d9292a6a827b31a8914ed714 # Mar 5, 2025
 # https://pages.github.com/versions/
 plugins:
   - jekyll-feed
@@ -14,6 +14,9 @@ author:
 minima:
   skin: auto
   social_links:
-    - { platform: github, user_url: "https://github.com/jcbhmr" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/jcbhmr" }
-    - { platform: youtube, user_url: "https://www.youtube.com/@jcbhmr" }
+    - { title: GitHub, icon: github, url: "https://github.com/jcbhmr" }
+    - { title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/jcbhmr" }
+    - { title: YouTube, icon: youtube, url: "https://www.youtube.com/@jcbhmr" }
+    - { title: X, icon: x-twitter, url: "https://x.com/jcbhmr" }
+    - { title: Bluesky, icon: bluesky, url: "http://bsky.app/profile/jcbhmr.com" }
+    - { title: DEV Community, icon: dev, url: "https://dev.to/jcbhmr" }
