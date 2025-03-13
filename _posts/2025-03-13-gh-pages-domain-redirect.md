@@ -1,5 +1,5 @@
 ---
-title: How to wildcard redirect GitHub Pages
+title: GitHub Pages redirect to new domain
 ---
 
 Here's the code:
