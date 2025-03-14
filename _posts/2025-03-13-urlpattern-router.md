@@ -48,8 +48,8 @@ const routes = [
   [new URLPattern({ pathname: "/api/:thing" }), {
     HEAD(request, match) { return this.GET(request, match); },
     GET(request, match) {
-      console.log(request.url); //=> "https://localhost:8000/api/small-thing"
-      console.log(match.pathname.groups.thing); //=> "small-thing"
+      console.dir(request.url); //=> "https://localhost:8000/api/small-thing"
+      console.dir(match.pathname.groups.thing); //=> "small-thing"
       // ... do the stuff with the thing
       const { thing } = match.pathname.groups;
       return new Response(`The thing is: ${thing}`);
