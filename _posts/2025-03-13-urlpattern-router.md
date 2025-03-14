@@ -2,7 +2,7 @@
 title: DIY server routing with URLPattern
 ---
 
-I think server-side JS API apps underrate `URLPattern`. Everyone ends up reinventing their own custom route definition syntax.
+I think `URLPattern` is underrated in server-side JavaScript. Everyone ends up reinventing their own custom route definition syntax.
 
 [Hono](https://hono.dev/docs/api/routing):
 
