@@ -55,6 +55,7 @@ const routes = [
       return new Response(`The thing is: ${thing}`);
     },
   }],
+  // ... more routes here
 ];
 
 export default {
