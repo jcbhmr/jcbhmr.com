@@ -38,7 +38,7 @@ const match = pattern.exec("https://example.org/user/Alan%20Turing")
 
 [📚 URL Pattern API | MDN](https://developer.mozilla.org/en-US/docs/Web/API/URL_Pattern_API)
 
-Here's how I've started using it to DIY my own rudimentary router without any dependencies:
+Here's how I've started using it to DIY my own rudimentary router for basic sketches without any dependencies:
 
 ```js
 // ⭐ Define your routes here. Order matters.
