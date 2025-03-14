@@ -2,7 +2,7 @@
 title: DIY server routing with URLPattern
 ---
 
-I think `URLPattern` is underrated in server-side JavaScript. Everyone ends up reinventing their own custom route definition syntax.
+I think `URLPattern` is underrated in server-side JavaScript. Everyone ends up reinventing their own subtlety different route definition syntax.
 
 [Hono](https://hono.dev/docs/api/routing):
 
@@ -12,12 +12,14 @@ app.get('/post/:date{[0-9]+}/:title{[a-z]+}', ...)
 app.get('/posts/:filename{.+\\.png}', ...)
 ```
 
-[Express]()
+[Express](https://expressjs.com/en/guide/routing.html):
 
 ```js
-router.get('/user/:id', ...)
+router.get('/user/:id(\\d+)', ...)
 router.get('/plantae/:genus.:species', ...)
 ```
+
+They're all fine and great and all that, I just like the builtin-ness of `URLPattern`.
 
 Demo of `URLPattern` in action:
 
