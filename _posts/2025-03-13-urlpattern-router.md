@@ -63,7 +63,7 @@ export default {
   async fetch(request) {
     const route = routes
       .values()
-      .map(([pattern, handlers]) => [pattern.exec(request.url), handlers]))
+      .map(([pattern, handlers]) => [pattern.exec(request.url), handlers])
       .find(([match, handlers]) => !!match);
     if (!route) return new Response(null, { status: 404 });
     const [match, handlers] = route;
