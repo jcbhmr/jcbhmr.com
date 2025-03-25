@@ -81,4 +81,4 @@ export default {
 
 This works great for making easy copy-paste no-dependency demos in the [Deno Deploy playground](https://docs.deno.com/deploy/manual/playgrounds/). I'm sure it also works great with [the Cloudflare Workers playground](https://developers.cloudflare.com/workers/playground/) too.
 
-Sometimes you just want the most basic of basics. But often the basics aren't enough; don't reinvent the wheel if you don't have a reason to.
+Sometimes you just want the most basic of basics.
