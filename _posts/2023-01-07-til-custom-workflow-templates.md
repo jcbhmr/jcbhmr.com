@@ -5,7 +5,7 @@ redirect_from: /blog/til-custom-workflow-templates
 
 So you know how there's this wizard that you can use to create new GitHub Actions right? It turns out that there's a way to add your own GitHub Actions templates there!
 
-![](/media/2023-01-07-001.png)
+![](https://i.imgur.com/9Gznv24.png)
 
 All you need to do is add a `workflow-templates/*.yml` and `workflow-templates/*.properties.json` pair in your `user/.github` repository. This works for both organizations (like the official GitHub docs say) **and regular users**.
 
@@ -44,7 +44,7 @@ jobs:
 </svg>
 ```
 
-![](/media/2023-01-07-002.png)
+![](https://i.imgur.com/X4OHsJU.png)
 
 📚 Further reading: [Creating starter workflows for your organization](https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization) (also works for users too)
 

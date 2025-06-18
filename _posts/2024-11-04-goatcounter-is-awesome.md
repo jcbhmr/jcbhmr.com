@@ -14,9 +14,9 @@ Seriously. It's much easier than setting up Google Analytics and configuring a c
 
 Here are some screenshots of the GoatCounter dashboard information that you could expect to see:
 
-![image](/media/2024-11-04-001.png)
+![image](https://i.imgur.com/Buq9EK2.png)
 
-![image](/media/2024-11-04-002.png)
+![image](https://i.imgur.com/016U8bf.png)
 
 [**Live demo**](https://stats.arp242.net/)
 

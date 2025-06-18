@@ -27,7 +27,7 @@ CB3TooltipManager.onPoiDrawn = oldOnPoiDrawn;
 CSV.stringify(table);
 ```
 
-![screenshot of me doing that](/media/2024-12-05-001.png)
+![screenshot of me doing that](https://i.imgur.com/nIKQj6X.png)
 
 ## How it works
 

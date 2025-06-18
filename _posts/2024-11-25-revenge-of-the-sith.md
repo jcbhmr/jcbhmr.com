@@ -3,7 +3,7 @@ title: "Star Wars: Episode III - Revenge of the Sith novelization review"
 ---
 
 <p align=center>
-  <img alt="Revenge of the Sith novel cover" src="/media/2024-11-25-001.jpg">
+  <img alt="Revenge of the Sith novel cover" src="https://i.imgur.com/FD6O9XW.jpeg">
 </p>
 
 **TL;DR:** It's really good.
