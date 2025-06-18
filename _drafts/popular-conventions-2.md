@@ -14,3 +14,15 @@ This is a continuation of https://jcbhmr.com/2025/02/03/popular-conventions/
 
 - ⭐ `.JSValue()` [538](https://github.com/search?q=language%3AGo+%2F%5C%29+JSValue%5C%28%5C%29+%28js%5C.%29%3FValue%2F&type=code)
 - `.ToJS()` [47](https://github.com/search?q=language%3AGo+%2F%5C%29+ToJS%5C%28%5C%29+%28js%5C.%29%3FValue%2F&type=code)
+
+#### Is it camelCase, kebab-case, snake_case, or alloneword for GitHub repository names?
+
+*This is all hearsay. I haven't done the data digging to back this up with stats.*
+
+Prefer kebab-case since `-` is treated as a word separator by search engines like Google. The repository name appears in the GitHub.com URL `github.com/octocat/my-awesome-project` and should thus be URL-friendly if you have no other constraints.
+
+#### Is it camelCase, kebab-case, snake_case, alloneword, or "with spaces" for file names?
+
+*There isn't really any data for this that isn't skewed towards repository-tracked data files on GitHub or published PDF files on WordPress sites from a Google search. This is all anecdotal from me.*
+
+If it's a data file name, prefer kebab-case or snake_case depending on the conventions of the consuming software. Avoid case-sensitive naming. Prefer all lowercase. Windows is case-insensitive. Prefer avoiding spaces unless in programming contexts. \*nix-related scripting in shells is made more difficult by spaces in file names. Prefer regular "with spaces" title-style naming for `.docx`, `.pdf`, `.jpg`, etc. files that are meant to be shared or viewed by a human.
