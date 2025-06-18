@@ -1,5 +1,5 @@
 # Use the unpublished v3 of minima.
-remote_theme: jekyll/minima@43f3ed05dc0f6842d9292a6a827b31a8914ed714 # Mar 5, 2025
+remote_theme: jekyll/minima@0b7ca6bbdb782a646f8e7b78b1a29fd5032ad4d3 # 2025/05/02
 # https://pages.github.com/versions/
 plugins:
   - jekyll-feed
