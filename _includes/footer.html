@@ -19,8 +19,12 @@
       {%- endif %}
       </div>
       <div class="footer-col">
-        <p>{{ site.description | escape }}<br>
-        <sub><a href="{{ site.github.repository_url }}">Source code</a></sub></p>
+        {% if site.github.private %}
+            <p>{{ site.description | escape }}</p>
+        {% else %}
+            <p>{{ site.description | escape }}<br>
+            <sub><a href="{{ site.github.repository_url }}">Source code</a></sub></p>
+        {% endif %}
       </div>
     </div>
 
