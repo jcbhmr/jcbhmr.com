@@ -25,4 +25,24 @@ Prefer kebab-case since `-` is treated as a word separator by search engines lik
 
 *There isn't really any data for this that isn't skewed towards repository-tracked data files on GitHub or published PDF files on WordPress sites from a Google search. This is all anecdotal from me.*
 
-If it's a data file name, prefer kebab-case or snake_case depending on the conventions of the consuming software. Avoid case-sensitive naming. Prefer all lowercase. Windows is case-insensitive. Prefer avoiding spaces unless in programming contexts. \*nix-related scripting in shells is made more difficult by spaces in file names. Prefer regular "with spaces" title-style naming for `.docx`, `.pdf`, `.jpg`, etc. files that are meant to be shared or viewed by a human.
+If it's a data file name, prefer kebab-case or snake_case depending on the conventions of the consuming software. Avoid case-sensitive naming. Prefer all lowercase. Windows is case-insensitive. Prefer avoiding spaces in programming contexts. \*nix-related scripting in shells is made more difficult by spaces in file names. Prefer regular "with spaces" title-style naming for `.docx`, `.pdf`, `.jpg`, etc. files that are meant to be shared or viewed by a human.
+
+#### What's the preferred npm registry subdomain?
+
+`npm.example.org`. Example: https://npm.jsr.io/.
+
+_npmjs.com gets away with https://registry.npmjs.com because it's unambiguous._
+
+#### What's the preferred OCI registry subdomain?
+
+_I don't really know at this time. This is just to write these thoughts down for now._
+
+- docker.example.org
+- oci.example.org
+- registry.example.org
+- cr.example.org
+- r.example.org
+
+#### What's the preferred Go module subdomain?
+
+If your domain is related to Go, then none; use Go module `<meta>` tags in your main website's HTML to point to your module source. Otherwise, `go.example.org`. Example: https://go.bytecodealliance.org/, https://go.uber.org/.
