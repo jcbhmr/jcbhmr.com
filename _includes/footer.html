@@ -27,11 +27,11 @@
       {%- include social.html -%}
     </div>
 
-    {% if !site.github.private %}
-        <div class="custom-footer-source-code">
-            <a href="{{ site.github.repository_url }}"><i class="fa-solid fa-code"></i> Source code</a>
-        </div>
-    {% endif %}
+    {% unless site.github.private %}
+      <div class="custom-footer-source-code">
+        <a href="{{ site.github.repository_url }}"><i class="fa-solid fa-code"></i> Source code</a>
+      </div>
+    {% endunless %}
 
   </div>
 
