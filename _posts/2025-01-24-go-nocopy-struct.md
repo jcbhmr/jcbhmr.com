@@ -43,4 +43,4 @@ We can use this `go vet` check to our advantage! If you have a type that you don
 The Go standard library uses this trick too. This is the current best way to make a struct pseudo-uncopyable.
 
 https://github.com/search?q=repo%3Agolang%2Fgo%20noCopy&type=code
-![image](https://i.imgur.com/3yDVbh5.png)
+![image](/uploads/2025-01-24-001.png)

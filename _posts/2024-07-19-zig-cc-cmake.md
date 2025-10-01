@@ -128,7 +128,7 @@ Tada! 🥳 You have now built a Windows x86-64 `.exe` file from your M1 MacBook[
 
 <tr><td>
 
-![hello world alert box](https://i.imgur.com/oQuMIsF.png)
+![hello world alert box](/uploads/2024-07-19-001.png)
 
 </table>
 

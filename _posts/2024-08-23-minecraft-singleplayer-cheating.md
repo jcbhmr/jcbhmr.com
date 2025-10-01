@@ -48,7 +48,7 @@ _This is written by someone who plays [Minecraft for Windows](https://www.xbox.c
 Mojang already has a guide for what is and isn't considered cheating in vanilla survival Minecraft: **Are achievements enabled if you do that?**
 
 <p>
- <img width=400 src="https://i.imgur.com/rWGJnt4.png">
+ <img width=400 src="/uploads/2024-08-23-001.png">
 </p>
 
 But that doesn't do enough for me. I don't like the idea that editing some NBT data is "not cheating because it didn't trigger the 'achievements disabled' screen".

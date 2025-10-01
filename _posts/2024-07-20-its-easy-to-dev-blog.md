@@ -11,7 +11,7 @@ Here's a basic step-by-step to creating the _most basic_ dev blog that looks _re
 
 You get a ready-made GitHub Pages `<username>.github.io` domain that's perfect for your basic website needs. Just create a new repository like `jcbhmr.github.io` but replace `jcbhmr` with your GitHub username.
 
-![](https://i.imgur.com/6sB2ARp.png)
+![](/uploads/2024-07-20-002.png)
 
 ## 2. Enable GitHub pages
 
@@ -19,7 +19,7 @@ In your repository settings you need to turn on GitHub Pages to make it pull [Je
 
 You can find the menu to turn on GitHub Pages in the Settings tab of your repository under the Pages sidebar menu.
 
-![](https://i.imgur.com/p2kbz19.png)
+![](/uploads/2023-07-20-003.png)
 
 Make sure you set the source branch!
 
@@ -29,7 +29,7 @@ After you hit Save you should be able to visit `<username>.github.io` as a websi
 
 The default Primer GitHub Pages theme is nice... but it lacks a homepage index of your most recent blog posts. 😢 IMO the best path forward is to switch to another default theme: the builtin default [Jekyll Minima theme](https://github.com/jekyll/minima).
 
-![](https://i.imgur.com/4hpy8TZ.png)
+![](/uploads/2023-07-20-001.png)
 
 To do that, create a `_config.yml` file in your GitHub repository that you created in step 1 and add the following line:
 
@@ -63,7 +63,7 @@ Now you have your new fancy dev blog post on _your own website_! 🥳 And it onl
 
 <sub>It should look something like this</sub>
 
-![](https://i.imgur.com/NZ1xSA1.png)
+![](/uploads/2024-07-20-004.png)
 
 ## Or just use something else
 

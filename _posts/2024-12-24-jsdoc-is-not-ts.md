@@ -10,7 +10,7 @@ It doesn't work the same. JSDoc types aren't recognized by [npm](https://www.npm
 
 **npm** doesn't display the "TS" badge next to the package name **unless you have a `"types": "./dist/index.d.ts"` or similar `types` key in your `package.json`**.
 
-![image](https://i.imgur.com/ZNhvlLj.png)
+![image](/uploads/2024-12-24-001.png)
 
 [📚 Read the official GitHub/npm announcement](https://github.blog/changelog/2020-12-16-npm-displays-packages-with-bundled-typescript-declarations/)
 
