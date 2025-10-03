@@ -36,7 +36,7 @@ _npmjs.com gets away with https://registry.npmjs.com because it's unambiguous._
 #### What's the preferred OCI registry subdomain?
 
 - ⭐ `docker.example.org` [718](https://sourcegraph.com/search?q=context%3Aglobal+%2F%28%5E%7C%5Cs%29docker%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29%2F+count%3Aall&patternType=keyword&sm=0&__cc=1)
-- `cr.example.org` [438](https://sourcegraph.com/search?q=context%3Aglobal+%2F%28%5E%7C%5Cs%29cr%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29%2F+count%3Aall&patternType=keyword&sm=0&__cc=1) _note that `cr` is an ISO 639-1 language code_
+- `cr.example.org` [438](https://sourcegraph.com/search?q=context%3Aglobal+%2F%28%5E%7C%5Cs%29cr%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29%2F+count%3Aall&patternType=keyword&sm=0&__cc=1) _note that `cr` is an ISO 639-1 language code and an ISO 3166 country code_
 - `containers.example.org` [~100](https://sourcegraph.com/search?q=context:global+/%28%5E%7C%5Cs%29containers%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29/+count:all&patternType=keyword&sm=0)
 - `oci.example.org` [59](https://sourcegraph.com/search?q=context:global+/%28%5E%7C%5Cs%29oci%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29/+count:all&patternType=keyword&sm=0)
 
