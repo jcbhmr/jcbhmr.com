@@ -37,7 +37,7 @@ _npmjs.com gets away with https://registry.npmjs.com because it's unambiguous._
 
 - ⭐ `docker.example.org` [718](https://sourcegraph.com/search?q=context%3Aglobal+%2F%28%5E%7C%5Cs%29docker%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29%2F+count%3Aall&patternType=keyword&sm=0&__cc=1)
 - `cr.example.org` [438](https://sourcegraph.com/search?q=context%3Aglobal+%2F%28%5E%7C%5Cs%29cr%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29%2F+count%3Aall&patternType=keyword&sm=0&__cc=1) _note that `cr` is an ISO 639-1 language code and an ISO 3166 country code_
-- `containers.example.org` [~100](https://sourcegraph.com/search?q=context:global+/%28%5E%7C%5Cs%29containers%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29/+count:all&patternType=keyword&sm=0)
+- `containers.example.org` [142](https://sourcegraph.com/search?q=context:global+/%28%5E%7C%5Cs%29containers%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29/+count:all&patternType=keyword&sm=0)
 - `oci.example.org` [59](https://sourcegraph.com/search?q=context:global+/%28%5E%7C%5Cs%29oci%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29/+count:all&patternType=keyword&sm=0)
 
 Sometimes container registries use a `*cr.io` TLD. Ex: `gcr.io` and `ghcr.io`.
@@ -45,3 +45,8 @@ Sometimes container registries use a `*cr.io` TLD. Ex: `gcr.io` and `ghcr.io`.
 #### What's the preferred Go module subdomain?
 
 If your domain is related to Go, then none; use Go module `<meta>` tags in your main website's HTML to point to your module source. Otherwise, `go.example.org`. Example: https://go.bytecodealliance.org/, https://go.uber.org/.
+
+#### What's the preferred Git code host subdomain?
+
+- ⭐ `git.example.org` [2.8k](https://sourcegraph.com/search?q=context:global+/%28%5E%7C%5Cs%29git%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29/+count:all&patternType=keyword&sm=0)
+- `code.example.org` [520](https://sourcegraph.com/search?q=context:global+/%28%5E%7C%5Cs%29code%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29/+count:all&patternType=keyword&sm=0)
