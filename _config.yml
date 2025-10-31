@@ -1,5 +1,5 @@
 # Use the unpublished v3 of minima.
-remote_theme: jekyll/minima@b3385fe64e9d79e75260668cad1852a3913b1829 # 2025/09/21
+remote_theme: jekyll/minima@bf9ef989246b63536e9db61082f663f1a6d4d9ce # 2025/10/15
 # https://pages.github.com/versions/
 plugins:
   - jekyll-feed
@@ -20,4 +20,3 @@ minima:
     - { title: X, icon: x-twitter, url: "https://x.com/jcbhmr" }
     - { title: Bluesky, icon: bluesky, url: "http://bsky.app/profile/jcbhmr.com" }
     - { title: DEV Community, icon: dev, url: "https://dev.to/jcbhmr" }
-
