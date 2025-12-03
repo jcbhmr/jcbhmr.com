@@ -1,16 +1,19 @@
-# Use the unpublished v3 of minima.
+# Use the unpublished v3 of minima. https://github.com/jekyll/minima
 remote_theme: jekyll/minima@bf9ef989246b63536e9db61082f663f1a6d4d9ce # 2025/10/15
 # https://pages.github.com/versions/
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+# The default Markdown parser is not GitHub-flavored Markdown
 markdown: GFM
+# Remove ".html" extensions from links. GitHub Pages supports pretty URLs now.
 permalink: pretty
 title: Jacob Hummer
 description: A far too meticulous web developer 💻
 author:
   name: Jacob Hummer
   email: jcbhmr@outlook.com
+# See https://github.com/jekyll/minima/blob/master/_config.yml for details
 minima:
   skin: auto
   social_links:
@@ -20,3 +23,6 @@ minima:
     - { title: X, icon: x-twitter, url: "https://x.com/jcbhmr" }
     - { title: Bluesky, icon: bluesky, url: "http://bsky.app/profile/jcbhmr.com" }
     - { title: DEV Community, icon: dev, url: "https://dev.to/jcbhmr" }
+# Include ".well-known/" in build output. Jekyll ignores ".*" things by default.
+include:
+  - ".well-known"
