@@ -11,18 +11,18 @@ I did some diving into what the possible values for these string enums are:
 - [`node:process` `arch`](https://docs.deno.com/api/node/process/~/Process#property_arch) & [`node:os` `arch()`](https://docs.deno.com/api/node/os/~/arch)
 - [`node:os` `machine()`](https://docs.deno.com/api/node/os/~/machine)
 
-Note that the `node:`-related values that I'm discussing are **for Deno's Node.js API polyfills**, not the Node.js runtime's implementation of them. That's another deep dive that I might explore later. **This is just Deno's platform/arch values** -- where and how they are exposed to JS code.
+Note that the `node:`-related values that I'm discussing are **for Deno's Node.js API polyfills**, not the Node.js' implementation of them. That's another deep dive that I might explore later. **This is just Deno's platform/arch values** -- where and how they are exposed to JS code.
 
 **TL;DR:**
 
 - `Deno.build.os` is [any possible OS name across all valid Rust targets](https://docs.rs/platforms/latest/platforms/target/enum.OS.html)
 - `Deno.build.arch` is [any possible arch name across all valid Rust targets](https://docs.rs/platforms/latest/platforms/target/enum.Arch.html)
 - `Deno.build.target` is [any valid Rust target tuple](https://doc.rust-lang.org/stable/rustc/targets/built-in.html)
-- `process.platform` is [any possible OS name across all valid Rust targets](https://docs.rs/platforms/latest/platforms/target/enum.OS.html) but replace `windows` with `win32`
-- `process.arch` is `"x64" | "arm64" | "riscv64"` only
-- `os.machine()` is [any possible arch name across all valid Rust targets](https://docs.rs/platforms/latest/platforms/target/enum.Arch.html) but replace `aarch64` with `arm64`
+- `process.platform` is [any possible OS name across all valid Rust targets](https://docs.rs/platforms/latest/platforms/target/enum.OS.html) **but replace `windows` with `win32`**
+- `process.arch` is `"x64" | "arm64" | "riscv64"` only or it might throw an `Error`
+- `os.machine()` is [any possible arch name across all valid Rust targets](https://docs.rs/platforms/latest/platforms/target/enum.Arch.html) **but replace `aarch64` with `arm64`**
 
-⚠️ **Remember!** These are the possible values _for Deno's Node.js `node:` polyfills_, not for Node.js' native `node:` JS APIs.
+⚠️ **Remember!** These are the possible values _for Deno's Node.js `node:` polyfills_, not for Node.js' own implementation.
 
 ## `Deno.build`
 
