@@ -19,7 +19,7 @@ Note that the `node:`-related values that I'm discussing are **for Deno's Node.j
 - `Deno.build.arch` is [any possible arch name across all valid Rust targets](https://docs.rs/platforms/latest/platforms/target/enum.Arch.html)
 - `Deno.build.target` is [any valid Rust target tuple](https://doc.rust-lang.org/stable/rustc/targets/built-in.html)
 - `process.platform` is [any possible OS name across all valid Rust targets](https://docs.rs/platforms/latest/platforms/target/enum.OS.html) **but replace `windows` with `win32`**
-- `process.arch` is `"x64" | "arm64" | "riscv64"` only or it might throw an `Error`
+- `process.arch` is `"x64" | "arm64" | "riscv64"` **only**; it throws an `Error` when run on any other arch
 - `os.machine()` is [any possible arch name across all valid Rust targets](https://docs.rs/platforms/latest/platforms/target/enum.Arch.html) **but replace `aarch64` with `arm64`**
 
 ⚠️ **Remember!** These are the possible values _for Deno's Node.js `node:` polyfills_, not for Node.js' own implementation.
