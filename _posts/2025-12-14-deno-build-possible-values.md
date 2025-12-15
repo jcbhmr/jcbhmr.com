@@ -1,5 +1,5 @@
 ---
-title: Platform and arch possible values on Deno
+title: "Possible platform/arch names in Deno.build & node:process"
 ---
 
 I did some diving into what the possible values for these string enums are:
