@@ -2,11 +2,7 @@
 title: Node.js platform/arch possible values
 ---
 
-The official Node.js docs (v25.2.1) say that `process.platform` can be `'aix' | 'darwin' | 'freebsd' | 'linux' | 'openbsd' | 'sunos' | 'win32'` and `process.arch` can be `'arm' | 'arm64' | 'ia32' | 'loong64' | 'mips' | 'mipsel' | 'ppc64' | 'riscv64' | 's390' | 's390x' | 'x64'`. That's not quite true. This is a dive into where these values come from and what their possible values could actually be.
-
-- `node:process` `platform` & `node:os` `platform()`
-- `node:process` `arch` & `node:os` `arch()`
-- `node:os` `machine()`
+The official Node.js docs (v25.2.1) say that `process.platform` can be `'aix' | 'darwin' | 'freebsd' | 'linux' | 'openbsd' | 'sunos' | 'win32'` and `process.arch` can be `'arm' | 'arm64' | 'ia32' | 'loong64' | 'mips' | 'mipsel' | 'ppc64' | 'riscv64' | 's390' | 's390x' | 'x64'`. That's not quite true. This is my chronicle as I explore where the values come from.
 
 **TL;DR:**
 
