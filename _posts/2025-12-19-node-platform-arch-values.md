@@ -729,4 +729,4 @@ error:
 
 All possible values are: `x86_64`, `ia64`, `i386`, `i486`, `i586`, `i686`, `mips`, `alpha`, `powerpc`, `sh`, `arm`, `unknown`.
 
-So the possible values are pretty limited on Windows, but very varied on Unix systems. Great. There's no easy answer to "what possible values could it be". 😥
+So the possible values are well-known on Windows (yay), but very varied on Unix systems (not yay). This post is already too long; I'm not going to investigate all `uname -m` possible values, too. Maybe another time.
