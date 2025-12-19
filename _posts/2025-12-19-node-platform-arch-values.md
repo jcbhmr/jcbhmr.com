@@ -10,7 +10,7 @@ The official Node.js docs (v25.2.1) say that `process.platform` can be `'aix' | 
 
 **TL;DR:**
 
-- **`node:process` `platform` & `node:os` `platform()`:** `"netbsd"`, `"os390"`, `"win32"`, `"darwin"`, `"sunos"`, `"freebsd"`, `"openbsd"`, `"linux"`, `"android"`, `"aix"`, `"os400"`, `"ios"`, `"openharmony"`, `"emscripten"`, `"wasm"`, `"wasi"`
+- **`node:process` `platform` & `node:os` `platform()`:** `"netbsd"`, `"os390"`, `"win32"`, `"darwin"`, `"sunos"`, `"freebsd"`, `"openbsd"`, `"linux"`, `"android"`, `"aix"`, `"os400"`, `"ios"`, `"openharmony"`, `"emscripten"`, `"wasm"`, `"wasi"`, `"cloudabi"`
 - **`node:process` `arch` & `node:os` `arch()`:** `"s390x"`, `"arm64"`, `"arm"`, `"ia32"`, `"mipsel"`, `"mips"`, `"mips64el"`, `"ppc64"`, `"x64"`, `"riscv64"`, `"riscv32"`, `"loong64"`
 - **`node:os` `machine()`:** `x86_64`, `ia64`, `i386`, `i486`, `i586`, `i686`, `mips`, `alpha`, `powerpc`, `sh`, `arm`, `unknown` on Windows; `ppc64` or _any `uname -m` value_ on Unix.
 
