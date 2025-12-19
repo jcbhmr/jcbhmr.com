@@ -337,21 +337,7 @@ All together here's a list of **all** the possible Node.js `NODE_PLATFORM` (and 
 - [200 matches](https://github.com/search?q=%2F%28process%5C.platform%7Cos%5C.platform%5C%28%5C%29%29%5Cs*%3D%3D%3D%3F%5Cs*%28%22%7C%27%29ios%28%22%7C%27%29%2F+%28language%3AJavaScript+OR+language%3ATypeScript%29&type=code) `"ios"`
 - [229 matches](https://github.com/search?q=%2F%28process%5C.platform%7Cos%5C.platform%5C%28%5C%29%29%5Cs*%3D%3D%3D%3F%5Cs*%28%22%7C%27%29openharmony%28%22%7C%27%29%2F+%28language%3AJavaScript+OR+language%3ATypeScript%29&type=code) `"openharmony"`
 
-Note that a few of these values are extremely rare and can be considered impossible to happen. `emscripten`, `wasi`, `wasm`, and `cloudabi` can all be considered _not gonna happen_ for Node.js (might happen with QuickJS or other Node.js-like runtimes). With those omissions the final `process.platform` exhaustive list is: `"netbsd"`, `"os390"`, `"win32"`, `"darwin"`, `"sunos"`, `"freebsd"`, `"openbsd"`, `"linux"`, `"android"`, `"aix"`, `"os400"`, `"ios"`, `"openharmony"`. That's different from the [official documentation](https://nodejs.org/api/process.html#processplatform):
-
-> Currently possible values are:
->
-> - `'aix'`
-> - `'darwin'`
-> - `'freebsd'`
-> - `'linux'`
-> - `'openbsd'`
-> - `'sunos'`
-> - `'win32'`
->
-> The value 'android' may also be returned if the Node.js is built on the Android operating system. However, Android support in Node.js is experimental.
-
-&mdash; [Node.js `process.platform` docs](https://nodejs.org/api/process.html#processplatform)
+Note that a few of these values are extremely rare, but they are sort of _possible_ depending on how you interpret "possible" in this situation.
 
 ## `node:process` `arch` & `node:os` `arch()`
 
