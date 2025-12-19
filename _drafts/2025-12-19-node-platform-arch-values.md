@@ -8,6 +8,12 @@ The official Node.js docs (v25.2.1) say that `process.platform` can be `'aix' | 
 - `node:process` `arch` & `node:os` `arch()`
 - `node:os` `machine()`
 
+**TL;DR:**
+
+- **`node:process` `platform` & `node:os` `platform()`:** `"netbsd"`, `"os390"`, `"win32"`, `"darwin"`, `"sunos"`, `"freebsd"`, `"openbsd"`, `"linux"`, `"android"`, `"aix"`, `"os400"`, `"ios"`, `"openharmony"`, `"emscripten"`, `"wasm"`, `"wasi"`
+- **`node:process` `arch` & `node:os` `arch()`:** `"s390x"`, `"arm64"`, `"arm"`, `"ia32"`, `"mipsel"`, `"mips"`, `"mips64el"`, `"ppc64"`, `"x64"`, `"riscv64"`, `"riscv32"`, `"loong64"`
+- **`node:os` `machine()`:** `x86_64`, `ia64`, `i386`, `i486`, `i586`, `i686`, `mips`, `alpha`, `powerpc`, `sh`, `arm`, `unknown` on Windows; `ppc64` or _any `uname -m` value_ on Unix.
+
 ## `node:process` `platform` & `node:os` `platform()`
 
 The Node.js process object is defined across some C++ files as a global object. The `node:process` module just reexports it with all the appropriate named properties. This means there's nothing to see in `lib/process.js`
@@ -335,7 +341,7 @@ All together here's a list of **all** the possible Node.js `NODE_PLATFORM` (and 
 - [200 matches](https://github.com/search?q=%2F%28process%5C.platform%7Cos%5C.platform%5C%28%5C%29%29%5Cs*%3D%3D%3D%3F%5Cs*%28%22%7C%27%29ios%28%22%7C%27%29%2F+%28language%3AJavaScript+OR+language%3ATypeScript%29&type=code) `"ios"`
 - [229 matches](https://github.com/search?q=%2F%28process%5C.platform%7Cos%5C.platform%5C%28%5C%29%29%5Cs*%3D%3D%3D%3F%5Cs*%28%22%7C%27%29openharmony%28%22%7C%27%29%2F+%28language%3AJavaScript+OR+language%3ATypeScript%29&type=code) `"openharmony"`
 
-Note that a few of these values are extremely rare and can be considered impossible to happen. `emscripten`, `wasi`, `wasm`, and `cloudabi` can all be considered _not gonna happen_. With those omissions the final `process.platform` exhaustive list is: `"netbsd"`, `"os390"`, `"win32"`, `"darwin"`, `"sunos"`, `"freebsd"`, `"openbsd"`, `"linux"`, `"android"`, `"aix"`, `"os400"`, `"ios"`, `"openharmony"`. That's different from the [official documentation](https://nodejs.org/api/process.html#processplatform):
+Note that a few of these values are extremely rare and can be considered impossible to happen. `emscripten`, `wasi`, `wasm`, and `cloudabi` can all be considered _not gonna happen_ for Node.js (might happen with QuickJS or other Node.js-like runtimes). With those omissions the final `process.platform` exhaustive list is: `"netbsd"`, `"os390"`, `"win32"`, `"darwin"`, `"sunos"`, `"freebsd"`, `"openbsd"`, `"linux"`, `"android"`, `"aix"`, `"os400"`, `"ios"`, `"openharmony"`. That's different from the [official documentation](https://nodejs.org/api/process.html#processplatform):
 
 > Currently possible values are:
 >
@@ -608,6 +614,8 @@ static void GetOSInformation(const FunctionCallbackInfo<Value>& args) {
 
 `uv_os_name()` has two different implementations: one for Unix and one for Windows. The Unix implementation uses `uname()` `.machine`.
 
+<div><a href="https://github.com/libuv/libuv/blob/ec7ec98b70149bafc2f8d57b9e4133e2f2570d52/src/unix/core.c#L1856">libuv/libuv: <code>src/unix/core.c</code></a></div>
+
 ```cpp
 int uv_os_uname(uv_utsname_t* buffer) {
   struct utsname buf;
@@ -643,11 +651,11 @@ error:
 }
 ```
 
-So the possible values are _whatever `uname()` `.machine` can be_ plus `ppc64` if it's AIX. But what are the possible values of `uname()` `.machine`?
-
-_TODO_ https://stackoverflow.com/questions/45125516/possible-values-for-uname-m
+So the possible values are _whatever `uname()` `.machine` can be_ plus `ppc64` if it's AIX or `__PASE__` (whatever that is). But what are the possible values of `uname()` `.machine`? That's a good question... for another time. <sup>TODO: Investigate the possible values of `uname -m`</sup>
 
 **Back to `uv_os_name()`.** The Windows implementation sets the `.machine` property to a variety of static strings depending on some conditions.
+
+<div><a href="https://github.com/libuv/libuv/blob/ec7ec98b70149bafc2f8d57b9e4133e2f2570d52/src/win/util.c#L1676">libuv/libuv: <code>src/win/util.c</code></a></div>
 
 ```cpp
 int uv_os_uname(uv_utsname_t* buffer) {
@@ -720,3 +728,5 @@ error:
 ```
 
 All possible values are: `x86_64`, `ia64`, `i386`, `i486`, `i586`, `i686`, `mips`, `alpha`, `powerpc`, `sh`, `arm`, `unknown`.
+
+So the possible values are pretty limited on Windows, but very varied on Unix systems. Great. There's no easy answer to "what possible values could it be". 😥
