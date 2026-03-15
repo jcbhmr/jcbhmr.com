@@ -29,6 +29,8 @@ If it's a data file name, prefer kebab-case or snake_case depending on the conve
 
 #### What's the preferred npm registry subdomain?
 
+*Couldn't find an easy way to get stats on this*
+
 `npm.example.org`. Example: https://npm.jsr.io/.
 
 _npmjs.com gets away with https://registry.npmjs.com because it's unambiguous._
@@ -40,13 +42,25 @@ _npmjs.com gets away with https://registry.npmjs.com because it's unambiguous._
 - `containers.example.org` [142](https://sourcegraph.com/search?q=context:global+/%28%5E%7C%5Cs%29containers%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29/+count:all&patternType=keyword&sm=0)
 - `oci.example.org` [59](https://sourcegraph.com/search?q=context:global+/%28%5E%7C%5Cs%29oci%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29/+count:all&patternType=keyword&sm=0)
 
-Sometimes container registries use a `*cr.io` TLD. Ex: `gcr.io` and `ghcr.io`.
+Sometimes container registries use a `*cr.io` TLD. Ex: `gcr.io` and `ghcr.io`. *I couldn't find a way to filter for just `*cr.io` domains that happen to serve an OCI registry without lots of effort.*
 
 #### What's the preferred Go module subdomain?
 
 If your domain is related to Go, then none; use Go module `<meta>` tags in your main website's HTML to point to your module source. Otherwise, `go.example.org`. Example: https://go.bytecodealliance.org/, https://go.uber.org/.
 
+- ⭐ `go.example.org` [910](https://sourcegraph.com/search?q=context:global+file:go%5C.mod+/%5Emodule+go%5C.%28%5Cw%2B%29%5C.%28com%7Corg%7Cnet%7Cdev%7Cio%29%28%5C/%7C%24%29/+count:all&patternType=keyword&sm=0)
+- `git.example.org` [28](https://sourcegraph.com/search?q=context:global+file:go%5C.mod+/%5Emodule+git%5C.%28%5Cw%2B%29%5C.%28com%7Corg%7Cnet%7Cdev%7Cio%29%28%5C/%7C%24%29/+count:all&patternType=keyword&sm=0)
+- `(gitlab|forgejo|gitea|gogs|cgit).example.org` [14](https://sourcegraph.com/search?q=context:global+file:go%5C.mod+/%5Emodule+%28gitlab%7Cforgejo%7Cgitea%7Cgogs%7Ccgit%29%5C.%28%5Cw%2B%29%5C.%28com%7Corg%7Cnet%7Cdev%7Cio%29%28%5C/%7C%24%29/+count:all&patternType=keyword&sm=0)
+
 #### What's the preferred Git code host subdomain?
 
 - ⭐ `git.example.org` [2.8k](https://sourcegraph.com/search?q=context:global+/%28%5E%7C%5Cs%29git%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29/+count:all&patternType=keyword&sm=0)
 - `code.example.org` [520](https://sourcegraph.com/search?q=context:global+/%28%5E%7C%5Cs%29code%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29/+count:all&patternType=keyword&sm=0)
+- `(github|gitlab|forgejo|gogs|gitea|cgit).example.org` [295](https://sourcegraph.com/search?q=context:global+/%28%5E%7C%5Cs%29https:%5C/%5C/%28github%7Cgitlab%7Cforgejo%7Cgogs%7Cgitea%7Ccgit%29%5C.%28%5Ba-z0-9%5C-%5D%2B%5C.%29%2B%28%5Ba-z0-9%5C-%5D%2B%29%28%5Cs%7C%24%29/+count:all&patternType=keyword&sm=0)
+
+#### What directory should I put my TypeScript (not JavaScript) test files in?
+
+- ⭐ `tests/` [1.5M](https://github.com/search?q=path%3A%2F%5Etests%5C%2F%2F+language%3ATypeScript&type=code)
+- `test/` [1.3M](https://github.com/search?q=path%3A%2F%5Etest%5C%2F%2F+language%3ATypeScript&type=code)
+
+Note that this is different from the "JS or TS" search query from [the previous popular conventions post](https://jcbhmr.com/2025/02/03/popular-conventions/#:~:text=What%20name%20for%20my%20test%20code%20folder%20in%20a%20JavaScript%20project%3F)
