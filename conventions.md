@@ -121,13 +121,16 @@ Note that this is a different convention (`tests/`) from non-TypeScript JavaScri
 
 *This is all hearsay. I haven't done the data digging to back this up with stats.*
 
-Prefer kebab-case since `-` is treated as a word separator by search engines like Google. The repository name appears in the GitHub.com URL `github.com/octocat/my-awesome-project` and should thus be URL-friendly if you have no other constraints.
+Prefer ⭐ kebab-case since `-` is treated as a word separator by search engines like Google. The repository name appears in the GitHub.com URL `github.com/octocat/my-awesome-project` and should thus be URL-friendly if you have no other constraints.
 
 #### Is it camelCase, kebab-case, snake_case, alloneword, or "with spaces" for file names?
 
 *There isn't really any data for this that isn't skewed towards repository-tracked data files on GitHub or published PDF files on WordPress sites from a Google search. This is all anecdotal from me.*
 
-If it's a data file name, prefer kebab-case or snake_case depending on the conventions of the consuming software. Avoid case-sensitive naming. Prefer all lowercase. Windows is case-insensitive. Prefer avoiding spaces in programming contexts. \*nix-related scripting in shells is made more difficult by spaces in file names. Prefer regular "with spaces" title-style naming for `.docx`, `.pdf`, `.jpg`, etc. files that are meant to be shared or viewed by a human.
+- ⭐ If it's a **data file** name, prefer kebab-case or snake_case depending on the conventions of the consuming software. If it's tracked in Git, make it match your project's file name style.
+- Avoid case-sensitive naming. Prefer all lowercase. (Remember Windows is case-insensitive.)
+- Prefer avoiding spaces in programming contexts. \*nix-related scripting in shells is made more difficult by spaces in file names.
+- Prefer regular "with spaces" title-style naming for `.docx`, `.pdf`, `.jpg`, etc. files that are meant to be shared or viewed by a human. Like Google Drive: think of the file name as the document title.
 
 #### What's the preferred npm registry subdomain?
 
@@ -144,7 +147,7 @@ _npmjs.com gets away with https://registry.npmjs.com because it's unambiguous._
 - `containers.example.org` [142](https://sourcegraph.com/search?q=context:global+/%28%5E%7C%5Cs%29containers%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29/+count:all&patternType=keyword&sm=0)
 - `oci.example.org` [59](https://sourcegraph.com/search?q=context:global+/%28%5E%7C%5Cs%29oci%5C.%5Ba-z0-9%5C-%5D%2B%5C.%28com%7Corg%7Cnet%7Cio%7Cdev%7Cus%7Cuk%7Ccc%7Ctv%7Cai%7Cme%7Cblog%7Csite%29%28%5Cs%7C%24%29/+count:all&patternType=keyword&sm=0)
 
-Sometimes container registries use a `*cr.io` TLD. Ex: `gcr.io` and `ghcr.io`. *I couldn't find a way to filter for just `*cr.io` domains that happen to serve an OCI registry without lots of effort.*
+Sometimes container registries use a `*cr.io` TLD. Ex: `gcr.io` and `ghcr.io`. *I couldn't think of a good way to filter for just `*cr.io` domains that happen to serve an OCI registry. Let me know if you have one.*
 
 #### What's the preferred Go module subdomain?
 
