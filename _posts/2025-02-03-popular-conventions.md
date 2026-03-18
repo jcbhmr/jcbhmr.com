@@ -2,6 +2,8 @@
 title: Some popular conventions that I've observed
 ---
 
+**Update 2026/03/18:** Continually-update conventions document now at https://jcbhmr.com/conventions
+
 I'm a big believer in conventions. I like having clear directions for minor trivial details instead of hmmm-ing and haw-ing about what to do when _it's just not a big deal_ but also _you want to conform to the expectations of the ecosystem_. But when entering a _new_ ecosystem it's hard to get a feel for what the conventions are. For instance, if you're a new JavaScript programmer should you put your test code in `tests/`, `test/`, or `__tests__/`? There's not really a good answer on Google.
 
 This is a collection of some of these "what's the most popular way to $X?" questions and their results.
