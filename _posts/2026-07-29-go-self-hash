@@ -1,0 +1,65 @@
+---
+title: "Go: compute the SHA-256 hash of os.Executable()"
+---
+
+This is just a quick code snippet that I want future me to remember.
+
+<div><a href="https://goplay.tools/snippet/b-CeGbrkiO3">▶️ goplay.tools</a></div>
+
+```go
+package main
+
+import (
+	"crypto/sha256"
+	"encoding/hex"
+	"errors"
+	"fmt"
+	"hash"
+	"io"
+	"log"
+	"os"
+)
+
+func ExecutableSum(h hash.Hash) (sum []byte, err error) {
+	exe, err := os.Executable()
+	if err != nil {
+		return nil, err
+	}
+
+	f, err := os.Open(exe)
+	if err != nil {
+		return nil, err
+	}
+	defer func() {
+		err = errors.Join(err, f.Close())
+	}()
+
+	_, err = io.Copy(h, f)
+	if err != nil {
+		return nil, err
+	}
+
+	sum = h.Sum(nil)
+	return sum, nil
+}
+
+func main() {
+	exe, err := os.Executable()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	sum, err := ExecutableSum(sha256.New())
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Printf("The SHA-256 sum of %q is %q\n", exe, hex.EncodeToString(sum))
+}
+```
+
+Quick comments for future me:
+
+- Remember that `hex.EncodeToString()` can't error, so you can use it inline instead of extracting it into the surrounding block. That's nice.
+- You probably will want to extract the `os.Open()` `f` handle into a `func` so that the `defer` runs ASAP. If you do it inside a larger function, then that `defer f.Close()` will happen only when you `return` which may be much later than you prefer.
+- `os.Executable()` is not supported (it always errors) on `GOOS=wasip1`.
