@@ -56,7 +56,7 @@ for _, bs := range bi.Settings {
   }
 }
 
-if runtime.GOARCH == "GOWASM" && slices.Contains(strings.Split(gowasm, ","), "signext") {
+if runtime.GOARCH == "wasm" && slices.Contains(strings.Split(gowasm, ","), "signext") {
   fmt.Println("You're using WASM with signext")
 } else if runtime.GOARCH == "wasm" {
   fmt.Println("You're using WASM but without signext")
